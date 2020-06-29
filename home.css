@@ -1,0 +1,60 @@
+
+@font-face {
+    font-family: "Title";
+    src: url("fonts/didactgothic-regular-webfont.woff") format("woff")
+    }
+
+.bg_color {
+    background-color: #2f90a9;
+}
+
+.space_color{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #662483;
+    height: 40px;
+}
+
+.logo_img{
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.title_text{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-family: 'Title';
+    font-weight:bold;
+    font-style:normal;
+    color: #662483;
+}
+
+.chapter-text{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: 'Title';
+    font-weight:bold;
+    font-style:normal;
+    color: #954191;
+}
+
+.simple_text{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: 'Title';
+    font-weight:normal;
+    font-style:normal;
+    color: white;
+}
+
+.ul{
+    list-style: georgian;
+}
