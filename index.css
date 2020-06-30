@@ -38,6 +38,14 @@
     color: white;
 }
 
+.title-font{
+    font-family: 'Title';
+    font-weight:bold;
+    font-style:normal;
+    color: white;
+    margin-top: 10px;
+}
+
 .chapter-text{
     text-align: center;
     margin-top: 30px;
@@ -56,13 +64,19 @@
     color: white;
 }
 
+.credits_text{
+    font-family: 'Title';
+    font-weight:normal;
+    font-style:normal;
+    color: white;
+}
 
 ul {
     list-style: none; /* Remove default bullets */
   }
   
   ul li::before {
-    content: "\1F7C4";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    content: "\2726";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
@@ -89,11 +103,16 @@ ul {
 
 .footer-settings{
     background-color: #2f90a9;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: right;
+}
+
+.footer-inner{
+    padding-right: 5px;
 }
 
 .footer-image{
     height: 50px;
+    margin-top: -10px;
 }
