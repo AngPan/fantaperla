@@ -111,6 +111,7 @@ ul {
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: right;
+    border-top: 5px solid #de69a6;
 }
 
 .footer-inner{
