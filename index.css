@@ -30,7 +30,7 @@
 
 .title_text{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 20px;
     font-family: 'Title';
     font-weight:bold;
@@ -78,3 +78,10 @@
     justify-content:center;
     width:100%;
     }      
+
+    
+.navbar {
+
+    z-index: 1; /*Add this*/
+ 
+  }
