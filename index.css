@@ -9,7 +9,7 @@
 }
 
 .navbar_bg_color{
-    /* background-image: linear-gradient(to bottom, #2f90a9 74%, #662483 100%); */
+  
     background-color: #2f90a9;
 }
 
@@ -108,6 +108,7 @@ ul {
 
 .footer-settings{
     background-color: #2f90a9;
+    background-image: linear-gradient(to bottom, #662483 0%, #2f90a9 10%); 
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: right;
@@ -127,6 +128,7 @@ ul {
     overflow: scroll;
     white-space: nowrap;
     text-align: center;
+    height: 900%;
   }::-webkit-scrollbar {
     width: 0px;
 }
@@ -136,5 +138,5 @@ ul {
     
     padding: 14px;
     margin-top: 10px;
-    width: 90px;
+    width: 80px;
   }
