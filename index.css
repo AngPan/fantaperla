@@ -56,11 +56,19 @@
     color: white;
 }
 
-.ul{
-    list-style: georgian;
-}
 
-
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+    content: "\2726";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+  
 
 .navbar-header{
     width:100%;
@@ -79,9 +87,3 @@
     width:100%;
     }      
 
-    
-.navbar {
-
-    z-index: 1; /*Add this*/
- 
-  }
