@@ -13,6 +13,11 @@
     background-color: #2f90a9;
 }
 
+.navbar_footer_bg_color{
+    background-image: linear-gradient(to bottom, #662483 74%, #2f90a9 100%); 
+    /* background-color: #2f90a9; */
+}
+
 .space_color{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -116,3 +121,19 @@ ul {
     height: 50px;
     margin-top: -10px;
 }
+
+  div.scrollmenu {
+    background-color: #de69a6;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+ 
+
+  div.scrollmenu img {
+    display: inline-block;
+    
+    padding: 14px;
+    width: 80px;
+  }
