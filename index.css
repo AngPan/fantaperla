@@ -5,7 +5,9 @@
     }
 
 .bg_color {
-    background-color: #662483;
+    /* background-color: #662483; */
+    background-image: linear-gradient(to bottom, #662483 15%, #521d69 100%); 
+
 }
 
 .navbar_bg_color{
