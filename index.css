@@ -28,11 +28,13 @@
 }
 
 .logo_img{
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 10px;
+    height: 120px;
+    z-index: 99;
+}
+
+.logo_txt{
+  height: 100px;
+  z-index: 0;
 }
 
 .title_text{
