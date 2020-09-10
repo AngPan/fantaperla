@@ -11,13 +11,18 @@
 }
 
 .navbar_bg_color{
-  
     background-color: #2f90a9;
 }
 
 .navbar_footer_bg_color{
     background-image: linear-gradient(to bottom, #662483 74%, #2f90a9 100%); 
     /* background-color: #2f90a9; */
+}
+
+.hof_color{
+  border-top: 5px solid #de69a6;
+  background-color: #b88608;
+
 }
 
 .space{
@@ -47,6 +52,16 @@
     color: white;
 }
 
+.title_text_hall{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Title';
+  font-weight:bold;
+  font-style:normal;
+  color: white;
+}
+
 .title-font{
     font-family: 'Title';
     font-weight:bold;
@@ -72,6 +87,15 @@
     font-style:normal;
     color: white;
     padding-right: 15px;
+}
+
+.year_text_hall{
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Title';
+  font-weight:normal;
+  font-style:normal;
+  color: white;
 }
 
 .credits_text{
@@ -124,7 +148,7 @@ ul {
 }
 
 .footer-image{
-    height: 40px;
+    height: 35px;
     margin-top: -10px;
 }
 
@@ -140,11 +164,26 @@ ul {
   div.scrollmenu img {
     display: inline-block;
     margin-left: 14px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
+    height: 70px;
     position: static;
   }
 
+.scrollmenu_hall_of_fame {
+    background-color: #b88608;
+    overflow: scroll;
+    text-align: center;
+    white-space: nowrap;
+    display: grid;
+    justify-content: center;
+  }::-webkit-scrollbar {
+    width: 0px;
+}
+  
+.scrollmenu_hall_of_fame img {
+    height: 70px;
+  }
 
 
   /*****/
@@ -225,4 +264,17 @@ ul {
 
 .last-text{
   height: 100px;
+}
+
+.hof_row{
+  text-align:center;
+  margin:0 auto;
+}
+
+.hof_row .hof_col{
+ display:inline-block;
+ vertical-align: middle;
+ float: none;
+ padding-right: 10px;
+ padding-left: 10px;
 }
