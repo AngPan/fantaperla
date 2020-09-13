@@ -170,6 +170,10 @@ ul {
     position: static;
   }
 
+.lastteam{
+	margin-right: 14px;
+}
+
 .scrollmenu_hall_of_fame {
     background-color: #b88608;
     overflow: scroll;
