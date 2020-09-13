@@ -22,7 +22,10 @@
 .hof_color{
   border-top: 5px solid #de69a6;
   background-color: #b88608;
+}
 
+.color_white{
+	color: white;
 }
 
 .space{
