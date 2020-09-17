@@ -297,5 +297,153 @@ ul {
     font-style: normal;
     color: #5dbcd2;
     font-size: 50px;
-  
 }
+
+.align_left{
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------TEAMPAGE---------- */
+.teampage_logo_img{
+  height: 60px;
+  z-index: 99;
+}
+
+.teampage_logo_txt{
+height: 100px;
+z-index: 9;
+}
+
+.teampage_fplogo_col{
+  text-align: left;
+}
+
+.teampage_logo_div{
+  text-align: left;
+
+}
+
+.teampage_team_img{
+  height: 150px;
+  z-index: 99;
+  position: absolute;
+  top: 27px;
+  left: 15px;
+}
+
+.white-circle {
+  border-radius: 100%;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	box-shadow: 0 0 0 0 rgb(255, 255, 255);
+  animation: pulse-white 2s infinite;
+}
+
+@keyframes pulse-white {
+	0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
+	}
+	70% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+	}
+	100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+	}
+}
+
+.teampage_table_por{
+  margin-top: 200px;
+  border: 0px !important;
+}
+
+.teampage_table{
+  border: 0px !important;
+}
+
+.no_border{
+  border: 0px !important;
+}
+
+.teampage_th{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 0px !important;
+}
+
+.teampage_last_td{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.thead_port{
+  background-color: #826a00;
+  font-family: 'Title';
+  font-weight:bolder;
+  font-style:normal;
+  color: white;
+}
+
+.thead_dif{
+  background-color: #196b00;
+  font-family: 'Title';
+  font-weight:bolder;
+  font-style:normal;
+  color: white;
+}
+
+.thead_cen{
+  background-color: #00466b;
+  font-family: 'Title';
+  font-weight:bolder;
+  font-style:normal;
+  color: white;
+}
+
+.thead_att{
+  background-color: #660007;
+  font-family: 'Title';
+  font-weight:bolder;
+  font-style:normal;
+  color: white;
+}
+
+
+
+/* LAG */
+
+#teampage_lag_navbar {
+  overflow: hidden;
+  background-color: #2d3b6a; 
+  /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
+  padding: 50px 10px; /* Large padding which will shrink on scroll (using JS) */
+  position: absolute; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index:1;
+  border-bottom: 5px solid white;
+}
+
+.teampage_lag_bgcolor{
+  /* background-color: #eead30; */
+  background-image: linear-gradient(to bottom, #eead30 10%, #aa6f00 100%); 
+}
+
+.tr_bg_color_lag{
+  background-color: #6077b4;
+}
+
+
