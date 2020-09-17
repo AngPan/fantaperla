@@ -22,3 +22,5 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = "";
   }
 }, 1000);
+
+

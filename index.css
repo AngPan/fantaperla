@@ -350,6 +350,14 @@ z-index: 9;
   animation: pulse-white 2s infinite;
 }
 
+.white-badge {
+  border-radius: 0px 0px 70px 70px;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 0 0 0 white;
+  animation: pulse-white 2s infinite;
+    
+}
+
 @keyframes pulse-white {
 	0% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
@@ -421,8 +429,6 @@ z-index: 9;
   color: white;
 }
 
-
-
 /* LAG */
 
 #teampage_lag_navbar {
@@ -444,6 +450,64 @@ z-index: 9;
 
 .tr_bg_color_lag{
   background-color: #6077b4;
+  font-family: 'Title';
+  font-weight:bolder;
+  font-style:normal;
+  color: white;
 }
 
 
+/* PSG */
+
+#teampage_psg_navbar {
+  overflow: hidden;
+  background-color: #2d3b6a; 
+  /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
+  padding: 50px 10px; /* Large padding which will shrink on scroll (using JS) */
+  position: absolute; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index:1;
+  border-bottom: 5px solid white;
+}
+
+.teampage_psg_bgcolor{
+  /* background-color: #eead30; */
+  background-image: linear-gradient(to bottom, #8a0000 10%, #aa0000 100%); 
+}
+
+.tr_bg_color_psg{
+  background-color: #002079;
+  font-family: 'Title';
+  font-weight:bolder;
+  font-style:normal;
+  color: white;
+}
+
+
+/* PNK */
+
+#teampage_pnk_navbar {
+  overflow: hidden;
+  background-color: #001350; 
+  /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
+  padding: 50px 10px; /* Large padding which will shrink on scroll (using JS) */
+  position: absolute; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index:1;
+  border-bottom: 5px solid white;
+}
+
+.teampage_pnk_bgcolor{
+  /* background-color: #eead30; */
+  background-image: linear-gradient(to bottom, #5f4e00 10%, #c7a200 100%); 
+}
+
+.tr_bg_color_pnk{
+  background-color: #00588b;
+  font-family: 'Title';
+  font-weight:bolder;
+  font-style:normal;
+  color: white;
+}
