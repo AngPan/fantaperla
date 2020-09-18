@@ -11,7 +11,7 @@
 }
 
 .navbar_bg_color{
-    background-color: #2f90a9;
+    background-color: #5dbcd2;
 }
 
 .navbar_footer_bg_color{
@@ -343,6 +343,18 @@ z-index: 9;
   left: 15px;
 }
 
+.teams_footer-settings{
+  background-color: #662483;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: right;
+  border-top: 5px solid #de69a6;
+}
+
+.teams_fplogo_header_image{
+  height: 35px;
+}
+
 .white-circle {
   border-radius: 100%;
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
@@ -364,13 +376,20 @@ border-radius: 0px 0px 70px 70px;
   animation: pulse-blue-pnk 2s infinite;
 }
 
+.rub_badge{
+  border-radius: 0px 0px 70px 70px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 #882d00;
+    animation: pulse-red-rub 2s infinite;
+  }
+
 @keyframes pulse-white {
 	0% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
     background-color: rgba(255, 255, 255, 1);
 	}
 	70% {
-    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
     background-color: rgba(255, 255, 255, 0);
 	}
 	100% {
@@ -391,6 +410,21 @@ border-radius: 0px 0px 70px 70px;
 	100% {
     box-shadow: 0 0 0 0 rgba(0,68,188, 0);
     background-color: rgba(0,68,188, 0);
+	}
+}
+
+@keyframes pulse-red-rub {
+	0% {
+    box-shadow: 0 0 0 0 rgba(136, 45, 0, 1);
+    background-color: rgba(136, 45, 0, 1);
+	}
+	70% {
+    box-shadow: 0 0 0 10px rgba(136, 45, 0, 0);
+    background-color: rgba(136, 45, 0, 0);
+	}
+	100% {
+    box-shadow: 0 0 0 0 rgba(136, 45, 0, 0);
+    background-color: rgba(136, 45, 0, 0);
 	}
 }
 
@@ -419,29 +453,31 @@ border-radius: 0px 0px 70px 70px;
 }
 
 .thead{
+  background-color: #662483;
+  font-family: 'Title';
+  font-weight:bolder;
+  font-style:normal;
+  color: white;
+  text-align: center
+}
+
+.teamtab tr{
   background-color: #2f90a9;
   font-family: 'Title';
   font-weight:bolder;
   font-style:normal;
   color: white;
+  ;
 }
 
-
-.tr_bg_color{
-  background-color: #5dbcd2;
-  font-family: 'Title';
-  font-weight:bolder;
-  font-style:normal;
-  color: white;
-}
 
 /* LAG */
 
 #teampage_lag_navbar {
   overflow: hidden;
-  background-color: #2d3b6a; 
+  background-color: #1f294b; 
   /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
-  padding: 50px 10px; /* Large padding which will shrink on scroll (using JS) */
+  padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
   position: absolute; /* Sticky/fixed navbar */
   width: 100%;
   top: 0; /* At the top */
@@ -451,7 +487,7 @@ border-radius: 0px 0px 70px 70px;
 
 .teampage_lag_bgcolor{
   /* background-color: #eead30; */
-  background-image: linear-gradient(to bottom, #eead30 10%, #aa6f00 100%); 
+  background-image: linear-gradient(to bottom, #996f22 10%, #5f4310 100%); 
 }
 
 
@@ -460,9 +496,9 @@ border-radius: 0px 0px 70px 70px;
 
 #teampage_psg_navbar {
   overflow: hidden;
-  background-color: #2d3b6a; 
+  background-color: #002857; 
   /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
-  padding: 50px 10px; /* Large padding which will shrink on scroll (using JS) */
+  padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
   position: absolute; /* Sticky/fixed navbar */
   width: 100%;
   top: 0; /* At the top */
@@ -472,25 +508,18 @@ border-radius: 0px 0px 70px 70px;
 
 .teampage_psg_bgcolor{
   /* background-color: #eead30; */
-  background-image: linear-gradient(to bottom, #C1272D 10%, #8D272D 100%); 
+  background-image: linear-gradient(to bottom, #831d20 10%, #5c151a 100%); 
 }
 
-.tr_bg_color_psg{
-  background-color: #002079;
-  font-family: 'Title';
-  font-weight:bolder;
-  font-style:normal;
-  color: white;
-}
 
 
 /* PNK */
 
 #teampage_pnk_navbar {
   overflow: hidden;
-  background-color: #001350; 
+  background-color: #194088; 
   /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
-  padding: 50px 10px; /* Large padding which will shrink on scroll (using JS) */
+  padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
   position: absolute; /* Sticky/fixed navbar */
   width: 100%;
   top: 0; /* At the top */
@@ -500,13 +529,105 @@ border-radius: 0px 0px 70px 70px;
 
 .teampage_pnk_bgcolor{
   /* background-color: #eead30; */
-  background-image: linear-gradient(to bottom, #FFCB00 10%, #c7a200 100%); 
+  background-image: linear-gradient(to bottom, #917400 10%, #5c4b00 100%); 
 }
 
-.tr_bg_color_pnk{
-  background-color: #00588b;
-  font-family: 'Title';
-  font-weight:bolder;
-  font-style:normal;
-  color: white;
+
+/* RUB */
+
+#teampage_rub_navbar {
+  overflow: hidden;
+  background-color: #571d00; 
+  /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
+  padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
+  position: absolute; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index:1;
+  border-bottom: 5px solid white;
+}
+
+.teampage_rub_bgcolor{
+  /* background-color: #eead30; */
+  background-image: linear-gradient(to bottom, #003d21 10%, #002b17 100%); 
+}
+
+
+/* BLV */
+
+#teampage_blv_navbar {
+  overflow: hidden;
+  background-color: #12421e; 
+  /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
+  padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
+  position: absolute; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index:1;
+  border-bottom: 5px solid white;
+}
+
+.teampage_blv_bgcolor{
+  /* background-color: #eead30; */
+  background-image: linear-gradient(to bottom, #917400 10%, #5c4b00 100%); 
+}
+
+
+/* CAV */
+
+#teampage_cav_navbar {
+  overflow: hidden;
+  background-color: #472164; 
+  /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
+  padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
+  position: absolute; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index:1;
+  border-bottom: 5px solid white;
+}
+
+.teampage_cav_bgcolor{
+  /* background-color: #eead30; */
+  background-image: linear-gradient(to bottom, #85361b 10%, #522313 100%); 
+}
+
+
+/* PSN */
+
+#teampage_psn_navbar {
+  overflow: hidden;
+  background-color: #363636; 
+  /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
+  padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
+  position: absolute; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index:1;
+  border-bottom: 5px solid white;
+}
+
+.teampage_psn_bgcolor{
+  /* background-color: #eead30; */
+  background-image: linear-gradient(to bottom, #003b6b 10%,#00213b 100%); 
+}
+
+
+/* FCP */
+
+#teampage_fcp_navbar {
+  overflow: hidden;
+  background-color: #741823; 
+  /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
+  padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
+  position: absolute; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index:1;
+  border-bottom: 5px solid white;
+}
+
+.teampage_fcp_bgcolor{
+  /* background-color: #eead30; */
+  background-image: linear-gradient(to bottom, #07264d 10%,#041831 100%); 
 }
