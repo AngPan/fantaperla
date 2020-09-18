@@ -360,7 +360,7 @@ z-index: 9;
 .pnk_badge{
 border-radius: 0px 0px 70px 70px;
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	box-shadow: 0 0 0 0 white;
+	box-shadow: 0 0 0 0 rgb(0,68,188);
   animation: pulse-blue-pnk 2s infinite;
 }
 
