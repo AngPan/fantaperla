@@ -421,6 +421,13 @@ border-radius: 0px 0px 70px 70px;
     animation: pulse-blv-green 2s infinite;
   }
 
+  .cor-circle{
+    border-radius: 100%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 #882d00;
+    animation: pulse-red-rub 2s infinite;
+  }
+
 @keyframes pulse-white {
 	0% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
@@ -525,6 +532,7 @@ border-radius: 0px 0px 70px 70px;
     background-color: rgba(10, 111, 56, 0);
 	}
 }
+
 
 
 
@@ -750,4 +758,24 @@ border-radius: 0px 0px 70px 70px;
 .teampage_din_bgcolor{
   /* background-color: #eead30; */
   background-image: linear-gradient(to bottom, #a15707 10%,#683903 100%); 
+}
+
+
+/* COR */
+
+#teampage_cor_navbar {
+  overflow: hidden;
+  background-color: #143669; 
+  /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
+  padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
+  position: absolute; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index:1;
+  border-bottom: 5px solid white;
+}
+
+.teampage_cor_bgcolor{
+  /* background-color: #eead30; */
+  background-image: linear-gradient(to bottom, #521015 10%,#470e12 100%); 
 }
