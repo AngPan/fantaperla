@@ -393,6 +393,34 @@ border-radius: 0px 0px 70px 70px;
     animation: pulse-red-rub 2s infinite;
   }
 
+  .fcp_badge{
+    border-radius: 0px 0px 70px 70px;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      box-shadow: 0 0 0 0 black;
+      animation: pulse-black 2s infinite;
+    }
+
+  .din_circle{
+    border-radius: 100%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 0 0 0 rgb(251, 191, 59);
+    animation: pulse-yel-din 2s infinite;
+  }
+
+  .cav_circle{
+    border-radius: 100%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 0 0 0 rgb(10, 111, 56);
+    animation: pulse-pur-cav 2s infinite;
+  }
+
+  .blv-badge{
+    border-radius: 0px 0px 70px 70px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 0 0 0 rgb(102, 45, 143);
+    animation: pulse-blv-green 2s infinite;
+  }
+
 @keyframes pulse-white {
 	0% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
@@ -429,7 +457,7 @@ border-radius: 0px 0px 70px 70px;
     background-color: rgba(136, 45, 0, 1);
 	}
 	70% {
-    box-shadow: 0 0 0 10px rgba(136, 45, 0, 0);
+    box-shadow: 0 0 0 15px rgba(136, 45, 0, 0);
     background-color: rgba(136, 45, 0, 0);
 	}
 	100% {
@@ -437,6 +465,68 @@ border-radius: 0px 0px 70px 70px;
     background-color: rgba(136, 45, 0, 0);
 	}
 }
+
+@keyframes pulse-yel-din {
+	0% {
+    box-shadow: 0 0 0 0 rgba(251, 191, 59, 1);
+    background-color:  rgba(251, 191, 59,, 1);
+	}
+	70% {
+    box-shadow: 0 0 0 10px  rgba(251, 191, 59, 0);
+    background-color: rgba(251, 191, 59, 0);
+	}
+	100% {
+    box-shadow: 0 0 0 0 rgba(251, 191, 59, 0);
+    background-color: rgba(251, 191, 59, 0);
+	}
+}
+
+@keyframes pulse-pur-cav {
+	0% {
+    box-shadow: 0 0 0 0 rgba(102, 45, 143, 1);
+    background-color:  rgba(102, 45, 143, 1);
+	}
+	70% {
+    box-shadow: 0 0 0 10px  rgba(102, 45, 143, 0);
+    background-color: rgba(102, 45, 143, 0);
+	}
+	100% {
+    box-shadow: 0 0 0 0 rgba(102, 45, 143, 0);
+    background-color: rgba(102, 45, 143, 0);
+	}
+}
+
+@keyframes pulse-black {
+	0% {
+    box-shadow: 0 0 0 0 rgba(0,0,0, 1);
+    background-color:  rgba(0,0,0, 1);
+	}
+	70% {
+    box-shadow: 0 0 0 10px  rgba(0,0,0, 0);
+    background-color: rgba(0,0,0, 0);
+	}
+	100% {
+    box-shadow: 0 0 0 0 rgba(0,0,0, 0);
+    background-color: rgba(0,0,0, 0);
+	}
+}
+
+@keyframes pulse-blv-green {
+	0% {
+    box-shadow: 0 0 0 0 rgba(10, 111, 56, 1);
+    background-color:  rgba(10, 111, 56, 1);
+	}
+	70% {
+    box-shadow: 0 0 0 10px  rgba(10, 111, 56, 0);
+    background-color: rgba(10, 111, 56, 0);
+	}
+	100% {
+    box-shadow: 0 0 0 0 rgba(10, 111, 56, 0);
+    background-color: rgba(10, 111, 56, 0);
+	}
+}
+
+
 
 .teampage_table_por{
   margin-top: 20px;
@@ -547,7 +637,7 @@ border-radius: 0px 0px 70px 70px;
 
 #teampage_rub_navbar {
   overflow: hidden;
-  background-color: #571d00; 
+  background-color: #491800; 
   /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
   padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
   position: absolute; /* Sticky/fixed navbar */
@@ -587,7 +677,7 @@ border-radius: 0px 0px 70px 70px;
 
 #teampage_cav_navbar {
   overflow: hidden;
-  background-color: #472164; 
+  background-color: #361a4d; 
   /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
   padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
   position: absolute; /* Sticky/fixed navbar */
@@ -640,4 +730,24 @@ border-radius: 0px 0px 70px 70px;
 .teampage_fcp_bgcolor{
   /* background-color: #eead30; */
   background-image: linear-gradient(to bottom, #07264d 10%,#041831 100%); 
+}
+
+
+/* DIN */
+
+#teampage_din_navbar {
+  overflow: hidden;
+  background-color: #a07b2b; 
+  /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
+  padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
+  position: absolute; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index:1;
+  border-bottom: 5px solid white;
+}
+
+.teampage_din_bgcolor{
+  /* background-color: #eead30; */
+  background-image: linear-gradient(to bottom, #a15707 10%,#683903 100%); 
 }
