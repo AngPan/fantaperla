@@ -237,7 +237,7 @@ ul {
   }
   
 .champion-badge {
-  border-radius: 0px 0px 70px 70px;
+  border-radius: 0px 0px 100px 100px;
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 	box-shadow: 0 0 0 0 rgb(170, 125, 9);
   animation: pulse-yellow 2s infinite;
