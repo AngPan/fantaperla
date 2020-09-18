@@ -385,7 +385,7 @@ border-radius: 0px 0px 70px 70px;
     background-color: rgba(255, 255, 255, 1);
 	}
 	70% {
-    box-shadow: 0 0 0 35px rgba(0,68,188, 0);
+    box-shadow: 0 0 0 15px rgba(0,68,188, 0);
     background-color: rgba(0,68,188, 0);
 	}
 	100% {
