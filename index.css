@@ -765,7 +765,7 @@ border-radius: 0px 0px 70px 70px;
 
 #teampage_cor_navbar {
   overflow: hidden;
-  background-color: #143669; 
+  background-color: #521015;
   /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
   padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
   position: absolute; /* Sticky/fixed navbar */
@@ -777,5 +777,5 @@ border-radius: 0px 0px 70px 70px;
 
 .teampage_cor_bgcolor{
   /* background-color: #eead30; */
-  background-image: linear-gradient(to bottom, #521015 10%,#470e12 100%); 
+  background-image: linear-gradient(to bottom, #0e2649 10%,#0d2344 100%); 
 }
