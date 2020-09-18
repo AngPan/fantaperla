@@ -418,32 +418,17 @@ border-radius: 0px 0px 70px 70px;
   border-bottom-right-radius: 20px;
 }
 
-.thead_port{
-  background-color: #826a00;
+.thead{
+  background-color: #2f90a9;
   font-family: 'Title';
   font-weight:bolder;
   font-style:normal;
   color: white;
 }
 
-.thead_dif{
-  background-color: #196b00;
-  font-family: 'Title';
-  font-weight:bolder;
-  font-style:normal;
-  color: white;
-}
 
-.thead_cen{
-  background-color: #00466b;
-  font-family: 'Title';
-  font-weight:bolder;
-  font-style:normal;
-  color: white;
-}
-
-.thead_att{
-  background-color: #660007;
+.tr_bg_color{
+  background-color: #5dbcd2;
   font-family: 'Title';
   font-weight:bolder;
   font-style:normal;
@@ -469,13 +454,6 @@ border-radius: 0px 0px 70px 70px;
   background-image: linear-gradient(to bottom, #eead30 10%, #aa6f00 100%); 
 }
 
-.tr_bg_color_lag{
-  background-color: #6077b4;
-  font-family: 'Title';
-  font-weight:bolder;
-  font-style:normal;
-  color: white;
-}
 
 
 /* PSG */
