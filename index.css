@@ -335,6 +335,16 @@ z-index: 9;
 
 }
 
+.teamname{
+  font-family: 'Title';
+  font-weight:bold;
+  font-style:normal;
+  color: white;
+  margin-top: 185px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .teampage_team_img{
   height: 150px;
   z-index: 99;
@@ -429,7 +439,7 @@ border-radius: 0px 0px 70px 70px;
 }
 
 .teampage_table_por{
-  margin-top: 200px;
+  margin-top: 20px;
   border: 0px !important;
 }
 
@@ -517,7 +527,7 @@ border-radius: 0px 0px 70px 70px;
 
 #teampage_pnk_navbar {
   overflow: hidden;
-  background-color: #194088; 
+  background-color: #0e2247; 
   /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
   padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
   position: absolute; /* Sticky/fixed navbar */
