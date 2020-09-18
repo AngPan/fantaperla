@@ -473,7 +473,7 @@ z-index: 9;
 
 .teampage_psg_bgcolor{
   /* background-color: #eead30; */
-  background-image: linear-gradient(to bottom, #8a0000 10%, #aa0000 100%); 
+  background-image: linear-gradient(to bottom, #C1272D 10%, #8D272D 100%); 
 }
 
 .tr_bg_color_psg{
@@ -501,7 +501,7 @@ z-index: 9;
 
 .teampage_pnk_bgcolor{
   /* background-color: #eead30; */
-  background-image: linear-gradient(to bottom, #5f4e00 10%, #c7a200 100%); 
+  background-image: linear-gradient(to bottom, #FFCB00 10%, #c7a200 100%); 
 }
 
 .tr_bg_color_pnk{
