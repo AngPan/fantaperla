@@ -382,7 +382,7 @@ border-radius: 0px 0px 70px 70px;
 @keyframes pulse-blue-pnk {
 	0% {
     box-shadow: 0 0 0 0 rgba(0,68,188, 1);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(0,68,188, 1);
 	}
 	70% {
     box-shadow: 0 0 0 15px rgba(0,68,188, 0);
