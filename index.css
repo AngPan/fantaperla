@@ -352,7 +352,7 @@ z-index: 9;
   top: 27px;
   left: 15px;
   animation-name: team_logo_bounce;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 .teams_footer-settings{
@@ -368,8 +368,8 @@ z-index: 9;
 }
 
 @keyframes team_logo_bounce {
- 0% { transform: scale(1.1); opacity: 1 }
-  70% { transform: scale(1.3); opacity: 1; }
+ 0% { transform: scale(0.9); opacity: 1 }
+  70% { transform: scale(1.2); opacity: 1; }
   90% { transform: scale(0.6); opacity: 1 }
 100% { transform: scale(1) }	
 }
