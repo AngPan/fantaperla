@@ -351,6 +351,8 @@ z-index: 9;
   position: absolute;
   top: 27px;
   left: 15px;
+  animation-name: team_logo_bounce;
+  animation-duration: 1s;
 }
 
 .teams_footer-settings{
@@ -365,7 +367,11 @@ z-index: 9;
   height: 35px;
 }
 
-
+@keyframes team_logo_bounce {
+  0%   {height: 30px;}
+  90%  {height: 170px;}
+  100% {height: 150px;}
+}
 
 
 .teampage_table_por{
