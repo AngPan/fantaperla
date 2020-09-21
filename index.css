@@ -422,7 +422,7 @@ z-index: 9;
 
 #teampage_lag_navbar {
   overflow: hidden;
-  background-color: #1f294b; 
+  background-color: #996f22; 
   /* background-image: linear-gradient(to bottom, #00026e 15%, #6d6600 100%);  */
   padding: 33px 10px; /* Large padding which will shrink on scroll (using JS) */
   position: absolute; /* Sticky/fixed navbar */
@@ -434,7 +434,7 @@ z-index: 9;
 
 .teampage_lag_bgcolor{
   /* background-color: #eead30; */
-  background-image: linear-gradient(to bottom, #996f22 10%, #5f4310 100%); 
+  background-image: linear-gradient(to bottom, #1f294b 10%, #12182b 100%); 
 }
 
 
