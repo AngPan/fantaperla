@@ -10,8 +10,17 @@
 
 }
 
-.navbar_bg_color{
-    background-color: #5dbcd2;
+.cup{
+    background-color: #257488;
+}
+
+.cup h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Title';
+  font-weight:bold;
+  font-style:normal;
+  color: white;
 }
 
 .navbar_footer_bg_color{
@@ -20,8 +29,8 @@
 }
 
 .hof_color{
-  border-top: 5px solid #de69a6;
-  background-color: #b88608;
+  /* border-top: 5px solid #de69a6; */
+  background-color: #a88f00;
 }
 
 .color_white{
@@ -60,7 +69,6 @@
 
 .title_text_hall{
   text-align: center;
-  margin-top: 20px;
   margin-bottom: 20px;
   font-family: 'Title';
   font-weight:bold;
@@ -142,11 +150,10 @@ ul {
     }      
 
 .footer-settings{
-    background-color: #2f90a9;
+    background-color: rgb(46, 46, 46);
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: right;
-    border-top: 5px solid #de69a6;
 }
 
 .footer-inner{
@@ -159,7 +166,8 @@ ul {
 }
 
   div.scrollmenu {
-    background-color: #de69a6;
+    /* background-color: #de69a6; */
+    background-image: linear-gradient(to bottom, #2f90a9 15%, #1e5a69 100%); 
     overflow: scroll;
     white-space: nowrap;
     text-align: center;
@@ -181,7 +189,7 @@ ul {
 }
 
 .scrollmenu_hall_of_fame {
-    background-color: #b88608;
+    background-color: #a88f00;
     overflow: scroll;
     text-align: center;
     white-space: nowrap;
@@ -209,7 +217,7 @@ ul {
     z-index: 99;
     justify-content:center;
     text-align: center;
-    border-bottom: 5px solid #662483;
+    /* border-bottom: 5px solid #662483; */
   }
 
   
@@ -306,19 +314,35 @@ ul {
 .FGLink{
   background-color: rgb(46, 46, 46);
   text-align: center;
-    font-family: 'Title';
-    font-weight:bold;
-    font-style:normal;
-    color: white;
-    font-size: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  font-family: 'Title';
+  font-weight:bold;
+  font-style:normal;
+  color: white;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
+.diag1{
+    border-left: 500px solid rgb(46, 46, 46);
+    border-bottom: 50px solid transparent;
+}
 
+.diag2{
+  border-left: 500px solid #4a1b5f;
+  border-bottom: 50px solid transparent;
+  background-color: #257488;
+}
 
+.diag3{
+  border-left: 500px solid #257488;
+  border-bottom: 50px solid transparent;
+  background-color: #a88f00;
+  margin-top: -16px;
+}
 
-
-
-
-
+.diag4{
+  border-left: 500px solid #a88f00;
+  border-bottom: 50px solid transparent;
+  background-color: rgb(46, 46, 46);
+}
