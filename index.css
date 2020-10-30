@@ -211,7 +211,7 @@ ul {
     background-color: #2f90a9;
     padding: 50px 10px; /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-    position: sticky; /* Sticky/fixed navbar */
+    position: static; /* Sticky/fixed navbar */
     width: 100%;
     top: 0; /* At the top */
     z-index: 99;
