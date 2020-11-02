@@ -1,3 +1,4 @@
+
 // Set the date we're counting down to
 var countDownDate = new Date("Oct 9, 2020 21:00:00").getTime();
 
@@ -14,12 +15,14 @@ var x = setInterval(function() {
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
   // Display the result in the element with id="demo"
-  document.getElementById("timer").innerHTML ="- "+ days + " GIORNI ALL' ASTA";
+  if(document.getElementById("timer")){
+    document.getElementById("timer").reinnerHTML ="- "+ days + " GIORNI ALL' ASTA";
+  }
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "";
+    document.getElementById("timer").remove();
   }
 }, 1000);
 

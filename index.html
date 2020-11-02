@@ -12,10 +12,15 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/png" href="img/logoball_white.png" />
+    <title>Lega FantaPerla</title>
     <script type="text/javascript" src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dialog.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <title>Lega FantaPerla</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <header>
@@ -23,7 +28,10 @@
         <img class="logo_img" src="img/logoball_color.png">
         <img class="logo_txt" src="img/logotext.png">
     </div>
-    
+
+
+
+
     <div class="scrollmenu">
         <img src="img/arr.png" />
         <img src="img/ast.png" />
@@ -41,16 +49,46 @@
 
 <body class="bg_color">
 
-    <a href="https://leghe.fantacalcio.it/luisellafantaperla" style="text-decoration: none">
+    <a href="https://leghe.fantacalcio.it/luisellafantaperla" style="text-decoration: none" target="_blank">
         <div class="FGLink">
             VEDI CLASSIFICA E ROSE SU <img src="img/leghefanta.png">
-            <i class="material-icons md-18">launch</i>
+            <i class="material-icons md-36">touch_app</i>
         </div>
     </a>
-
     <div class="diag1"></div>
 
-    <!-- <div id="timer" class="timer"></div> -->
+
+
+
+
+    <div class="rapid-links">
+        <!-- Button to Open the Modal -->
+        <i class="material-icons md-48" type="button" class="btn btn-primary" data-toggle="modal"
+            data-target="#listoneModal">contact_page</i>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="listoneModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Scaricare listone giocatori?</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-footer">
+                    <a href="docs/Quotazioni_Fantacalcio.xlsx" class="button" style="color: #2f90a9" download><i
+                            class="material-icons md-48">get_app</i></a>
+
+                    <a href="docs/Quotazioni_Fantacalcio.xlsx" data-dismiss="modal" class="button" style="color: #662483 " download><i
+                        class="material-icons md-48">clear</i></a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="timer" class="timer"></div>
 
     <div>
         <div class="bg_color">
@@ -58,8 +96,6 @@
                 <img class="chapter-image" src="img/logoball_white.png" alt="">
                 REGOLAMENTO CAMPIONATO
             </h1>
-
-
             <div class="chapter-text">
                 <h2>
                     <b><i class="material-icons md-36">build</i> REGOLE GENERALI</b>
@@ -75,11 +111,6 @@
                         <li class="simple_text">
                             Per qualsiasi regola non compresa in questo regolamento, si fa riferimento al <b
                                 style="color: #5dbcd2;">regolamento base di fantacalcio</b>.
-                        </li>
-                        <li class="simple_text">
-                            Il listone giocatori è scaricabile <a href="docs/Quotazioni_Fantacalcio.xlsx" download
-                                style="text-decoration: none"><b style="color: #5dbcd2;">QUI <i
-                                        class="material-icons md-24">get_app</i></b></a>.
                         </li>
                         <li class="simple_text">
                             Quota d'ingresso : <b style="color: #5dbcd2;">50€ a partecipante</b> da consegnare il giorno
@@ -111,14 +142,16 @@
                             0,5 punti per <b style="color: #5dbcd2;">assist da fermo</b>.
                         </li>
                         <li class="simple_text">
-                            <b style="color: #5dbcd2;">MODIFICATORE DIFESA</b> : Modificatore applicabile se il portiere e almeno 4 difensori portano punteggio alla squadra.
-                            Il calcolo della media voti avviene sulla base dei voti del portiere e dei migliori 3 difensori, <b style="color: #5dbcd2;">esclusi bonus/malus</b>.
+                            <b style="color: #5dbcd2;">MODIFICATORE DIFESA</b> : Modificatore applicabile se il portiere
+                            e almeno 4 difensori portano punteggio alla squadra.
+                            Il calcolo della media voti avviene sulla base dei voti del portiere e dei migliori 3
+                            difensori, <b style="color: #5dbcd2;">esclusi bonus/malus</b>.
                             <br>
                             Le fasce bonus sono le seguenti:<br>
                             +0 punti se la media è < 6<br>
-                            +1 punto se la media è tra 6 e 6.49 (compresi)<br>
-                            +3 punti se la media è tra 6.5 e 6.99 (compresi)<br>
-                            +6 punti se la media è da 7 in su<br>
+                                +1 punto se la media è tra 6 e 6.49 (compresi)<br>
+                                +3 punti se la media è tra 6.5 e 6.99 (compresi)<br>
+                                +6 punti se la media è da 7 in su<br>
                         </li>
                         <li class="simple_text">
                             <b style="color: #5dbcd2;">VIVAIO</b>: Un giocatore comprato nella stagione precedente a <b
@@ -126,7 +159,7 @@
                             inizia
                             l'asta) può essere mantenuto gratuitamente nella nuova squadra. Il giocatore da inserire nel
                             vivaio e decidere se riconfermare o no l'anno successivo, dev'essere dichiarato <b
-                                style="color: #5dbcd2;">entro un mese dalla data dell'asta</b>.
+                                style="color: #5dbcd2;">entro la fine dell'anno in cui si è tenuta l'asta</b>.
                         </li>
                         <li class="simple_text">
                             <b style="color: #5dbcd2;">5 cambi</b> dalla panchina.
@@ -196,44 +229,44 @@
                 </h2>
             </div>
 
-    <div class="diag2"></div>
-    <div class="cup">            
-            <h1 class="title_text">
-                REGOLAMENTO POZZESINHO CUP
-            </h1>
+            <div class="diag2"></div>
+            <div class="cup">
+                <h1 class="title_text">
+                    REGOLAMENTO POZZESINHO CUP
+                </h1>
 
-            <div class="chapter-text">
-                <h2>
-                    <b><i class="material-icons md-36">emoji_events</i> REGOLE GENERALI</b>
-                    <ul class="star">
-                        <li class="simple_text">
-                            Montepremi : <b style="color: goldenrod;">50€</b>
-                        </li>
-                        <li class="simple_text">
-                            <b style="color: #5dbcd2;">Calendario giornate:</b> :<br>
-                            Gironi: 5-7-9-11-13-15-17-19-21-23<br>
-                            Quarti: 25-26<br>
-                            Semifinali: 28-29<br>
-                            Finale: 32<br>
-                        </li>
-                    </ul>
-                </h2>
-            </div>
-        </div>
-    </div>
-
-    <div class="diag3"></div>
-    <div class="hof_color">
-        <h1 class="title_text_hall"><i class="material-icons md-36 color_white">history_edu</i> ALBO D'ORO</h1>
-        <div class="container scrollmenu_hall_of_fame">
-            <div class="hof_row">
-                <div class="hof_col">
-                    <img src="img/pannik.png" />
-                    <h3 class="year_text_hall">2019-20</h3>
+                <div class="chapter-text">
+                    <h2>
+                        <b><i class="material-icons md-36">emoji_events</i> REGOLE GENERALI</b>
+                        <ul class="star">
+                            <li class="simple_text">
+                                Montepremi : <b style="color: goldenrod;">50€</b>
+                            </li>
+                            <li class="simple_text">
+                                <b style="color: #5dbcd2;">Calendario giornate:</b> :<br>
+                                Gironi: 5-7-9-11-13-15-17-19-21-23<br>
+                                Quarti: 25-26<br>
+                                Semifinali: 28-29<br>
+                                Finale: 32<br>
+                            </li>
+                        </ul>
+                    </h2>
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="diag3"></div>
+        <div class="hof_color">
+            <h1 class="title_text_hall"><i class="material-icons md-36 color_white">history_edu</i> ALBO D'ORO</h1>
+            <div class="container scrollmenu_hall_of_fame">
+                <div class="hof_row">
+                    <div class="hof_col">
+                        <img src="img/pannik.png" />
+                        <h3 class="year_text_hall">2019-20</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 <div class="diag4"></div>
 <footer class="footer-settings">

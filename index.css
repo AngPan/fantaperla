@@ -87,7 +87,7 @@
 
 .chapter-text{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 80px;
     font-family: 'Title';
     font-weight:bold;
     font-style:normal;
@@ -346,4 +346,10 @@ ul {
   border-left: 411px solid #a88f00;
   border-bottom: 50px solid transparent;
   background-color: rgb(46, 46, 46);
+}
+
+.rapid-links{
+  text-align: right;
+  color: #2f90a9;
+  padding-right: 20px;
 }
