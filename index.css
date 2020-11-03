@@ -350,9 +350,12 @@ ul {
 .rapid-links{
   text-align: right;
   color: #2f90a9;
-  padding: 15px;
+  padding-right: 15px;
   margin-bottom: 20px;
   float: right;
-  
   margin-left: 100%;
+}
+
+.rapid-link-elem{
+  padding-left: 0px;
 }
