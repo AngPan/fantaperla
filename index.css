@@ -359,3 +359,16 @@ ul {
 .rapid-link-elem{
   padding: 0px !important;
 }
+
+.teams{
+  text-align: center;
+  background-image: linear-gradient(to bottom, #2f90a9 15%, #1e5a69 100%); 
+}
+
+.teams img{
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  height: 70px;
+  position: static;
+}
