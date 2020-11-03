@@ -3,7 +3,7 @@
 var countDownDate = new Date("Oct 9, 2020 21:00:00").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+var x = setInterval(function () {
 
   // Get today's date and time
   var now = new Date().getTime();
@@ -15,8 +15,8 @@ var x = setInterval(function() {
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
   // Display the result in the element with id="demo"
-  if(document.getElementById("timer")){
-    document.getElementById("timer").reinnerHTML ="- "+ days + " GIORNI ALL' ASTA";
+  if (document.getElementById("timer")) {
+    document.getElementById("timer").reinnerHTML = "- " + days + " GIORNI ALL' ASTA";
   }
 
   // If the count down is finished, write some text
@@ -27,3 +27,11 @@ var x = setInterval(function() {
 }, 1000);
 
 
+document.getElementById("dwnld").onclick = function () { hide() };
+
+function hide() {
+  var y = setTimeout(function(){
+    document.getElementById("dwnld").setAttribute("data-dismiss", "modal");
+  }, 1000);
+  clearTimeout(y)
+}
