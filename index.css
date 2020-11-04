@@ -373,6 +373,8 @@ ul {
 .teams{
   text-align: center;
   background-image: linear-gradient(to bottom, #2f90a9 15%, #1e5a69 100%); 
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .teams img{
