@@ -149,17 +149,26 @@ ul {
     background-color: rgb(46, 46, 46);
     padding-top: 5px;
     padding-bottom: 5px;
-    text-align: right;
+    margin-right: 0px !important;
 }
 
-.footer-inner{
+.footer-credits{
     padding-right: 5px;
+    text-align: right;
+    float: right;
 }
 
 .footer-image{
     height: 30px;
     margin-top: -10px;
 }
+
+
+
+
+
+
+
 
   div.scrollmenu {
     /* background-color: #de69a6; */
@@ -272,8 +281,7 @@ ul {
 }
 
 .chapter-image{
-  margin-bottom: 15px;
-  height: 50px;
+  height: 48px;
 }
 
 .last-text{
@@ -349,7 +357,6 @@ ul {
 
 .rapid-links{
   text-align: right;
-  color: #2f90a9;
   margin-right: 15px !important;
   margin-bottom: 20px;
   float: right;
@@ -357,7 +364,10 @@ ul {
 }
 
 .rapid-link-elem{
+  width: 48px;
   padding: 0px !important;
+  color: #2f90a9;
+  text-decoration: none
 }
 
 .teams{
@@ -369,6 +379,14 @@ ul {
   display: inline-block;
   margin-top: 15px;
   margin-bottom: 10px;
-  height: 67px;
+  width: 67px;
   position: static;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.backToTop{
+  margin-left: 20px;
 }

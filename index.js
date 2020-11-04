@@ -46,5 +46,3 @@ function mapsSelector() {
 else /* else use Google */
     window.open("http://maps.google.com/?q=Via+Chiabrera+39+Roma");
 }
-
-// 41.8552027,12.4775271
