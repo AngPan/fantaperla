@@ -392,3 +392,9 @@ html {
 .backToTop{
   margin-left: 20px;
 }
+
+.leagueLink{
+  padding-top: 2px !important;
+  width: 45px;
+  margin-right: 5px !important;
+}
