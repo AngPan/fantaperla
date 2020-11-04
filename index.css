@@ -164,12 +164,6 @@ ul {
 }
 
 
-
-
-
-
-
-
   div.scrollmenu {
     /* background-color: #de69a6; */
     background-image: linear-gradient(to bottom, #2f90a9 15%, #1e5a69 100%); 
@@ -323,8 +317,15 @@ ul {
   font-style:normal;
   color: white;
   font-size: 25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 15px;
+}
+
+.rotateimg-30 {
+  -webkit-transform:rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
 }
 
 .diag1{
