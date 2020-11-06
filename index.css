@@ -328,29 +328,99 @@ ul {
   transform: rotate(-30deg);
 }
 
-.diag1{
-    border-left: 411px solid rgb(46, 46, 46);
+
+
+@media (min-width: 1200px) { ... }
+
+@media (min-width: 768px) and (max-width: 979px) { ... }
+
+@media (max-width: 767px) { 
+  
+  .diag1{
+      border-left: 411px solid rgb(46, 46, 46);
+      border-bottom: 50px solid transparent;
+  }
+
+  .diag2{
+    border-left: 411px solid #4a1b5f;
     border-bottom: 50px solid transparent;
+    background-color: #257488;
+  }
+
+  .diag3{
+    border-left: 411px solid #257488;
+    border-bottom: 50px solid transparent;
+    background-color: #a88f00;
+    margin-top: -16px;
+  }
+
+  .diag4{
+    border-left: 411px solid #a88f00;
+    border-bottom: 50px solid transparent;
+    background-color: rgb(46, 46, 46);
+  }
+
 }
 
-.diag2{
-  border-left: 411px solid #4a1b5f;
-  border-bottom: 50px solid transparent;
-  background-color: #257488;
+@media (max-width: 480px) { ... }
+
+@media (max-width: 375px) { 
+
+  .diag1{
+      border-left: 375px solid rgb(46, 46, 46);
+      border-bottom: 50px solid transparent;
+  }
+  
+  .diag2{
+    border-left: 375px solid #4a1b5f;
+    border-bottom: 50px solid transparent;
+    background-color: #257488;
+  }
+  
+  .diag3{
+    border-left: 375px solid #257488;
+    border-bottom: 50px solid transparent;
+    background-color: #a88f00;
+    margin-top: -16px;
+  }
+  
+  .diag4{
+    border-left: 375px solid #a88f00;
+    border-bottom: 50px solid transparent;
+    background-color: rgb(46, 46, 46);
+  }
+  
 }
 
-.diag3{
-  border-left: 411px solid #257488;
-  border-bottom: 50px solid transparent;
-  background-color: #a88f00;
-  margin-top: -16px;
+@media (max-width: 360px) { 
+
+  .diag1{
+      border-left: 360px solid rgb(46, 46, 46);
+      border-bottom: 50px solid transparent;
+  }
+
+  .diag2{
+    border-left: 360px solid #4a1b5f;
+    border-bottom: 50px solid transparent;
+    background-color: #257488;
+  }
+
+  .diag3{
+    border-left: 360px solid #257488;
+    border-bottom: 50px solid transparent;
+    background-color: #a88f00;
+    margin-top: -16px;
+  }
+
+  .diag4{
+    border-left: 360px solid #a88f00;
+    border-bottom: 50px solid transparent;
+    background-color: rgb(46, 46, 46);
+  }
+
 }
 
-.diag4{
-  border-left: 411px solid #a88f00;
-  border-bottom: 50px solid transparent;
-  background-color: rgb(46, 46, 46);
-}
+
 
 .link-container{
   padding-bottom: 10px;
