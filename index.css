@@ -470,3 +470,23 @@ html {
   margin-right: 5px !important;
 }
 
+.btnFloat{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:-50px;
+	right:10px;
+	background-color:#de69a6;
+  color:white;
+  border-radius: 45px;
+	text-align:center;
+  box-shadow: 2px 2px 3px #461959;
+  z-index: 99;
+  opacity: 0;
+  transition: all .5s ease
+}
+
+.showBtn {
+    opacity: 1;
+    bottom: 75px !important;
+  }
