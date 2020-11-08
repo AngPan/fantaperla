@@ -483,7 +483,7 @@ html {
   box-shadow: 2px 2px 3px #461959;
   z-index: 99;
   opacity: 0;
-  transition: all .5s ease
+  transition: all .3s ease
 }
 
 .showBtn {
