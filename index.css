@@ -496,25 +496,24 @@ html {
     bottom: 75px !important;
 }
 
-/* 
-.progress {
+
+.progress-bar-box {
   position: fixed;
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: #f1f1f1;
 }
 
 /* The progress container (grey background) */
 .progress-container {
   width: 100%;
-  height: 5px;
-  background: #ccc;
+  height: 4px;
+  background: #5dbcd2;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-  height: 5px;
-  background: #de69a6;
+  height: 8px;
+  background: #de69a6 !important;
   width: 0%;
-} */
+}
