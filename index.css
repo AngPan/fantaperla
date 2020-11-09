@@ -508,7 +508,8 @@ html {
 .progress-container {
   width: 100%;
   height: 4px;
-  background: #2f90a9;
+  /* background: #2f90a9; */
+  background: transparent;
 }
 
 /* The progress bar (scroll indicator) */
