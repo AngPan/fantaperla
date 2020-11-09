@@ -13,9 +13,12 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/png" href="img/logoball_white.png" />
     <title>Lega FantaPerla</title>
+
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="floatButton.js"></script>
     <script type="text/javascript" src="timeout.js"></script>
+    <script type="text/javascript" src="progressBar.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -24,6 +27,13 @@
 </head>
 
 <header id="top">
+
+    <!-- <div class="progress">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div> -->
+
     <div id="navbar">
         <img class="logo_img" src="img/logoball_color.png">
         <img class="logo_txt" src="img/logotext.png">
@@ -31,13 +41,13 @@
 
     <div class="diag0"></div>
 
-     <a href="#top" class="btnFloat" id="topBtn" >
+    <a href="#top" class="btnFloat" id="topBtn">
         <i class="fa fa-plus material-icons md-48 color_white">
-             <i class="material-icons md-48 color_white"> 
+            <i class="material-icons md-48 color_white">
                 keyboard_arrow_up
-             </i> 
+            </i>
         </i>
-        </a> 
+    </a>
 
     <!-- <div class="scrollmenu">
         <img src="img/arr.png" />
@@ -76,7 +86,7 @@
             VEDI CLASSIFICA E ROSE SU <img src="img/leghefanta.png">
             <i class="material-icons md-36 rotateimg-30">touch_app</i>
         </div>
-        
+
     </a>
     <div class="diag1"></div>
 
@@ -85,8 +95,8 @@
         <div class="rapid-links row">
             <a href="#league"><img class="column rapid-link-elem leagueLink" src="img/logoball_cyan.png" alt=""></a>
             <a href="#cup"><i class="material-icons md-48 column rapid-link-elem">emoji_events</i></a>
-            <i class="material-icons md-48 column rapid-link-elem" class="btn btn-primary"
-                data-toggle="modal" data-target="#listoneModal">contact_page</i>
+            <i class="material-icons md-48 column rapid-link-elem" class="btn btn-primary" data-toggle="modal"
+                data-target="#listoneModal">contact_page</i>
             <!-- <i class="material-icons md-48 column rapid-link-elem" type="button" class="btn" onclick="mapsSelector()">location_on</i> -->
         </div>
     </div>
@@ -291,7 +301,7 @@
 </body>
 <div class="diag4"></div>
 <footer class="footer-settings row">
-    
+
     <div class="footer-credits col">
         <h3 class="title-font">
             <img class="footer-image" src='img/me.png' onmouseover="this.src='img/mefill.png';"
