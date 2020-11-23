@@ -485,7 +485,7 @@ html {
   color:white;
   border-radius: 45px;
 	text-align:center;
-  box-shadow: 2px 2px 3px #461959;
+  /* box-shadow: 2px 2px 3px #461959; */
   z-index: 99;
   opacity: 0;
   transition: all .2s ease
@@ -495,7 +495,6 @@ html {
     opacity: 1;
     bottom: 75px !important;
 }
-
 
 .progress-bar-box {
   position: fixed;
