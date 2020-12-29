@@ -83,7 +83,13 @@
 </header>
 
 <body class="bg_color">
-
+    <script>
+        if (!navigator.serviceWorker.controller) {
+            navigator.serviceWorker.register("/sw.js").then(function (reg) {
+                console.log("Service worker has been registered for scope: " + reg.scope);
+            });
+        }
+    </script>
     <a href="https://leghe.fantacalcio.it/luisellafantaperla" style="text-decoration: none" target="_blank">
         <div class="FGLink">
             VEDI CLASSIFICA E ROSE SU <img src="img/leghefanta.png">

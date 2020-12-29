@@ -1,63 +1,51 @@
-const cacheName = 'pwa-conf-v1';
-const staticAssets = [
-    './',
-    './index.html',
-    './index.js',
-    './index.css'
-];
-
-
-self.addEventListener('install', async event => {
-    console.log('install event')
+self.addEventListener("install", function (event) {
+    event.waitUntil(preLoad());
 });
 
-self.addEventListener('fetch', async event => {
-    console.log('fetch event')
+var preLoad = function () {
+    console.log("Installing web app");
+    return caches.open("offline").then(function (cache) {
+        console.log("caching index and important routes");
+        return cache.addAll(["/blog/", "/blog", "/", "/contact", "/resume", "/offline.html"]);
+    });
+};
+
+self.addEventListener("fetch", function (event) {
+    event.respondWith(checkResponse(event.request).catch(function () {
+        return returnFromCache(event.request);
+    }));
+    event.waitUntil(addToCache(event.request));
 });
 
+var checkResponse = function (request) {
+    return new Promise(function (fulfill, reject) {
+        fetch(request).then(function (response) {
+            if (response.status !== 404) {
+                fulfill(response);
+            } else {
+                reject();
+            }
+        }, reject);
+    });
+};
 
-self.addEventListener('install', async event => {
-    const cache = await caches.open(cacheName);
-    await cache.addAll(staticAssets);
-});
+var addToCache = function (request) {
+    return caches.open("offline").then(function (cache) {
+        return fetch(request).then(function (response) {
+            console.log(response.url + " was cached");
+            return cache.put(request, response);
+        });
+    });
+};
 
-self.addEventListener('fetch', event => {
-    const req = event.request;
-    event.respondWith(cacheFirst(req));
-});
-
-
-async function cacheFirst(req) {
-    const cache = await caches.open(cacheName);
-    const cachedResponse = await cache.match(req);
-    return cachedResponse || fetch(req);
-}
-
-self.addEventListener('fetch', event => {
-    const req = event.request;
-
-    if (/.*(json)$/.test(req.url)) {
-        event.respondWith(networkFirst(req));
-    } else {
-        event.respondWith(cacheFirst(req));
-    }
-});
-
-async function networkFirst(req) {
-    const cache = await caches.open(cacheName);
-    try {
-        const fresh = await fetch(req);
-        cache.put(req, fresh.clone());
-        return fresh;
-    } catch (e) {
-        const cachedResponse = await cache.match(req);
-        return cachedResponse;
-    }
-}
-
-
-async function cacheFirst(req) {
-    const cache = await caches.open(cacheName);
-    const cachedResponse = await cache.match(req);
-    return cachedResponse || networkFirst(req);
+var returnFromCache = function (request) {
+    return caches.open("offline").then(function (cache) {
+        return cache.match(request).then(function (matching) {
+            if (!matching || matching.status == 404) {
+                return cache.match("offline.html");
+            } else {
+                return matching;
+            }
+        });
+    });
 }
