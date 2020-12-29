@@ -50,7 +50,7 @@ async function registerSW() {
 
 
 let deferredPrompt;
-const addBtn = document.querySelector('.add-button');
+const addBtn = document.getElementById('add-button');
 addBtn.style.display = 'none';
 
 
