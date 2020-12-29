@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="manifest" href="js13kpwa.webmanifest">
-    <!-- <link rel="manifest" href="manifest.json" crossorigin="use-credentials"> -->
+    <!-- <link rel="manifest" href="js13kpwa.webmanifest"> -->
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
 </head>
 
 <header id="top">
@@ -84,11 +84,13 @@
 
 <body class="bg_color">
     <script>
-        if (!navigator.serviceWorker.controller) {
-            navigator.serviceWorker.register("/sw.js").then(function (reg) {
-                console.log("Service worker has been registered for scope: " + reg.scope);
+
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker.register("/sw.js");
             });
         }
+
     </script>
     <a href="https://leghe.fantacalcio.it/luisellafantaperla" style="text-decoration: none" target="_blank">
         <div class="FGLink">
