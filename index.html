@@ -149,10 +149,38 @@
 
     <div>
 
-        <!-- <div>
-            <button class="add-button">Add to home screen</button>
-        </div> -->
+        <div id="pwa_redirect" style="display: none;"><a href="/your-pwa-install-page/"><button>Install this page as an
+                    app</button></a></div>
+        <div id="pwainstall" style="display: block;"><button id="pwainstall_button">Let’s do it</button></div>
 
+        <script>
+            window.addEventListener('beforeinstallprompt', (e) => {
+                e.preventDefault();
+                deferredPrompt = e;
+                pwa_redirect.style.display = 'block';
+            });
+        </script>
+
+        <script>
+            var pwa4wp_open_install = function () {
+                console.log("install button show");
+            };
+            document.getElementById("pwainstall_button").addEventListener("click", function () {
+                if (window.pwa4wp_installevent !== undefined) {
+                    window.pwa4wp_installevent.prompt();
+                    window.pwa4wp_installevent.userChoice.then(function (choiceResult) {
+                        if (choiceResult === 'accepted') {
+                            console.log('pwa installation accepted.')
+                        } else {
+                            console.log('pwa installation refused.')
+                        }
+                    });
+                    window.pwa4wp_installevent = null;
+                } else {
+                    console.log("install event is undefined");
+                }
+            });
+        </script>
         <div class="bg_color">
             <h1 class="title_text" id="league">
                 REGOLAMENTO CAMPIONATO
