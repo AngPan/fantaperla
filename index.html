@@ -24,8 +24,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- <link rel="manifest" href="js13kpwa.webmanifest"> -->
+
+
+    <!-- WEBAPP -->
     <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/logoball_color.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <header id="top">
@@ -84,7 +89,7 @@
 
 <body class="bg_color">
 
-    <script>
+    <!-- <script>
         if ('serviceWorker' in navigator) {
             window.addEventListiner('load', () => {
                 navigator.serviceWorker.register('sw.js')
@@ -98,7 +103,7 @@
         } else {
             console.log(`Service worker is not supported in this browser.`)
         }
-    </script>
+    </script> -->
 
     </script>
     <a href="https://leghe.fantacalcio.it/luisellafantaperla" style="text-decoration: none" target="_blank">
@@ -333,6 +338,22 @@
                 </div>
             </div>
         </div>
+
+
+
+        <script type="text/javascript">
+            if ('serviceWorker' in navigator) {
+                console.log("Will the service worker register?");
+                navigator.serviceWorker.register('sw.js')
+                    .then(function (reg) {
+                        console.log("Yes, it did.");
+                    }).catch(function (err) {
+                        console.log("No it didn't. This happened:", err)
+                    });
+            }
+        </script>
+
+
 </body>
 <div class="diag4 "></div>
 <footer class="footer-settings row">
