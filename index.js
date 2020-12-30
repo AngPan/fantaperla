@@ -32,7 +32,7 @@ window.addEventListener("beforeinstallprompt", e => {
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
   // Show the install button
-  installButton.hidden = false;
+  // installButton.hidden = false;
   installButton.addEventListener("click", installApp);
 });
 
