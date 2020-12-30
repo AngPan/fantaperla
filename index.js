@@ -23,7 +23,8 @@ async function registerSW() {
 
 let deferredPrompt; // Allows to show the install prompt
 // const installButton = document.getElementById("install_button");
-const installButton = document.getElementById("install_button");
+// const installButton = document.getElementById("install_button");
+const installButton = $('#install_button');
 
 
 window.addEventListener("beforeinstallprompt", e => {
