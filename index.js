@@ -46,7 +46,7 @@ function installApp() {
   deferredPrompt.userChoice.then(choiceResult => {
     if (choiceResult.outcome === "accepted") {
       console.log("PWA setup accepted");
-      installButton.hidden = true;
+      // installButton.hidden = true;
     } else {
       console.log("PWA setup rejected");
     }
