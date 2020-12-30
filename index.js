@@ -2,7 +2,7 @@
 console.log("INIT");
 
 window.addEventListener('load', e => {
-  new PWAConfApp();
+  // new PWAConfApp();
   registerSW();
 });
 
