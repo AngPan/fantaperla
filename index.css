@@ -544,12 +544,15 @@ html {
 
 .install-butt{
   background-color: #de69a6;
-  border-radius: 70px;
   font-family: 'Title';
   font-weight:bold;
   font-style:normal;
   color: white;
   font-size: 25px;
   padding-bottom: 7px;
-  margin-left: 50%;
+  border-color: #de69a6;
 }
+
+.container-settings{
+    margin-top: 30px;
+  }
