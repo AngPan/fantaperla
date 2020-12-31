@@ -11,7 +11,7 @@
 }
 
 .cup{
-    background-color: #257488;
+    background-color: #2f90a9;
 }
 
 .cup h1{
@@ -353,7 +353,7 @@ padding-bottom: 30px !important;
     /* border-left: 411px solid #4a1b5f; */
     border-left: 411px solid #662483;
     border-bottom: 50px solid transparent;
-    background-color: #257488;
+    background-color: #2f90a9;
   }
 
   .diag3{
@@ -370,7 +370,7 @@ padding-bottom: 30px !important;
   }
 
   .diag5{
-    border-left: 411px solid #257488;
+    border-left: 411px solid #2f90a9;
     border-bottom: 50px solid transparent;
     background-color: #662483;
   }
@@ -389,7 +389,7 @@ padding-bottom: 30px !important;
   .diag2{
     border-left: 375px solid #4a1b5f;
     border-bottom: 50px solid transparent;
-    background-color: #257488;
+    background-color: #2f90a9;
   }
   
   .diag3{
@@ -406,7 +406,7 @@ padding-bottom: 30px !important;
   }
 
   .diag5{
-    border-left: 375px solid #257488;
+    border-left: 375px solid #2f90a9;
     border-bottom: 50px solid transparent;
     background-color: #662483;
   }
@@ -423,7 +423,7 @@ padding-bottom: 30px !important;
   .diag2{
     border-left: 360px solid #4a1b5f;
     border-bottom: 50px solid transparent;
-    background-color: #257488;
+    background-color: #2f90a9;
   }
 
   .diag3{
@@ -440,7 +440,7 @@ padding-bottom: 30px !important;
   }
 
   .diag5{
-    border-left: 360px solid#257488;
+    border-left: 360px solid#2f90a9;
     border-bottom: 50px solid transparent;
     background-color: #662483;
   }
