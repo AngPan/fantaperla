@@ -35,7 +35,7 @@ window.addEventListener('beforeinstallprompt', function (event) {
 
 
 document.addEventListener('click', function (event) {
-  if (event.target.matches('.install-butt')) {
+  if (event.target.matches('.install-trigger')) {
     addToHomeScreen();
   }
 });
