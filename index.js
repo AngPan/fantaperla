@@ -18,15 +18,15 @@ async function registerSW() {
 }
 
 
-
+$('#install_button').css('display', 'none');
 
 
 window.addEventListener('beforeinstallprompt', function (event) {
   // not show the default browser install app prompt
   event.preventDefault();
-  console.log("App non installata");
   // add the banner here or make it visible
   // …
+  console.log("App non installata");
   $('#install_button').css('display', 'flex');
 
   // save the event to use it later
