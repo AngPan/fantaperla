@@ -34,16 +34,7 @@ window.addEventListener('beforeinstallprompt', function (event) {
 
 document.addEventListener('click', function (event) {
   if (event.target.matches('.install-trigger')) {
-    if /* if we're on iOS, open in Apple Maps */
-      ((navigator.platform.indexOf("iPhone") != -1) ||
-      (navigator.platform.indexOf("iPad") != -1) ||
-      (navigator.platform.indexOf("iPod") != -1)) {
-      console.log("IOS");
-      pwaOnIos();
-    }
-    else {
-      addToHomeScreen();
-    }
+    addToHomeScreen();
   }
 });
 
@@ -66,20 +57,6 @@ function addToHomeScreen() {
   });
 }
 
-function pwaOnIos() {
-  // Detects if device is on iOS 
-  const isIos = () => {
-    const userAgent = window.navigator.userAgent.toLowerCase();
-    return /iphone|ipad|ipod/.test(userAgent);
-  }
-  // Detects if device is in standalone mode
-  const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
-
-  // Checks if should display install popup notification:
-  if (isIos() && !isInStandaloneMode()) {
-    this.setState({ showInstallMessage: true });
-  }
-}
 
 
 
