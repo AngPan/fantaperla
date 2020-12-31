@@ -37,7 +37,15 @@ window.addEventListener('beforeinstallprompt', function (event) {
 
 document.addEventListener('click', function (event) {
   if (event.target.matches('.install-trigger')) {
-    addToHomeScreen();
+    if /* if we're on iOS, open in Apple Maps */
+      ((navigator.platform.indexOf("iPhone") != -1) ||
+      (navigator.platform.indexOf("iPad") != -1) ||
+      (navigator.platform.indexOf("iPod") != -1)) {
+      console.log("IOS");
+    }
+    else {
+      addToHomeScreen();
+    }
   }
 });
 
