@@ -26,8 +26,8 @@ window.addEventListener('beforeinstallprompt', function (event) {
   event.preventDefault();
   // add the banner here or make it visible
   // …
-  console.log("App non installata");
-  $('#install_button').css('display', 'flex');
+  // console.log("App non installata");
+  // $('#install_button').css('display', 'flex');
 
   // save the event to use it later
   // (it has the important prompt method and userChoice property)
