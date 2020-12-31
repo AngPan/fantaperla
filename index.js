@@ -18,9 +18,6 @@ async function registerSW() {
 }
 
 
-$('#install_button').css('display', 'none');
-
-
 window.addEventListener('beforeinstallprompt', function (event) {
   // not show the default browser install app prompt
   event.preventDefault();
@@ -42,6 +39,7 @@ document.addEventListener('click', function (event) {
       (navigator.platform.indexOf("iPad") != -1) ||
       (navigator.platform.indexOf("iPod") != -1)) {
       console.log("IOS");
+      pwaOnIos();
     }
     else {
       addToHomeScreen();
@@ -66,6 +64,21 @@ function addToHomeScreen() {
 
     window.promptEvent = null;
   });
+}
+
+function pwaOnIos() {
+  // Detects if device is on iOS 
+  const isIos = () => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test(userAgent);
+  }
+  // Detects if device is in standalone mode
+  const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+
+  // Checks if should display install popup notification:
+  if (isIos() && !isInStandaloneMode()) {
+    this.setState({ showInstallMessage: true });
+  }
 }
 
 
