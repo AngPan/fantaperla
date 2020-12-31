@@ -27,6 +27,7 @@ window.addEventListener('beforeinstallprompt', function (event) {
 
   // add the banner here or make it visible
   // …
+  $('#install_button').css('display', 'block');
 
   // save the event to use it later
   // (it has the important prompt method and userChoice property)
