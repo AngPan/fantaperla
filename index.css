@@ -4,14 +4,22 @@
     src: url("fonts/didactgothic-regular-webfont.woff") format("woff")
     }
 
+    :root {
+      --vio: #662483;
+      --ros: #de69a6;
+      --cel: #2f90a9;
+      --oro: #a88f00;
+    }
+
+
 .bg_color {
-    background-color: #662483;
-    /* background-image: linear-gradient(to bottom, #662483 15%, #461959 100%);  */
+    background-color: var(--vio);
+    /* background-image: linear-gradient(to bottom, var(--vio) 15%, #461959 100%);  */
 
 }
 
 .cup{
-    background-color: #2f90a9;
+    background-color: var(--cel);
 }
 
 .cup h1{
@@ -25,13 +33,13 @@
 }
 
 .navbar_footer_bg_color{
-    background-image: linear-gradient(to bottom, #662483 74%, #2f90a9 100%); 
-    /* background-color: #2f90a9; */
+    background-image: linear-gradient(to bottom, var(--vio) 74%, var(--cel) 100%); 
+    /* background-color: var(--cel); */
 }
 
 .hof_color{
-  /* border-top: 5px solid #de69a6; */
-  background-color: #a88f00;
+  /* border-top: 5px solid var(--ros); */
+  background-color: var(--oro);
 }
 
 .color_white{
@@ -91,7 +99,7 @@
     font-family: 'Title';
     font-weight:bold;
     font-style:normal;
-    color: #de69a6;
+    color: var(--ros);
 }
 
 .simple_text{
@@ -170,8 +178,8 @@ ul {
 
 
   div.scrollmenu {
-    /* background-color: #de69a6; */
-    background-image: linear-gradient(to bottom, #2f90a9 15%, #1e5a69 100%); 
+    /* background-color: var(--ros); */
+    background-image: linear-gradient(to bottom, var(--cel) 15%, #1e5a69 100%); 
     overflow: scroll;
     white-space: nowrap;
     text-align: center;
@@ -212,7 +220,7 @@ ul {
   /* Create a sticky/fixed navbar */
 #navbar {
     overflow: hidden;
-    background-color: #2f90a9;
+    background-color: var(--cel);
     padding: 50px 10px; /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     position: static; /* Sticky/fixed navbar */
@@ -221,7 +229,7 @@ ul {
     z-index: 99;
     justify-content:center;
     text-align: center;
-    /* border-bottom: 5px solid #662483; */
+    /* border-bottom: 5px solid var(--vio); */
   }
 
   
@@ -233,51 +241,11 @@ ul {
   }
   
 
-  /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
-  @media screen and (max-width: 580px) {
-    #navbar {
-      padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
-    }
-    #navbar a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    #navbar-right {
-      float: none;
-    }
-  }
   
-.champion-badge {
-  border-radius: 0px 0px 100px 100px;
-	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	box-shadow: 0 0 0 0 rgb(170, 125, 9);
-  animation: pulse-yellow 2.5s infinite;
-    
-}
 
-.champion-circle {
-  border-radius: 70%;
-	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	box-shadow: 0 0 0 0 rgb(170, 125, 9);
-  animation: pulse-yellow 2s infinite;
-    
-}
 
-@keyframes pulse-yellow {
-	0% {
-    box-shadow: 0 0 0 0 rgba(255, 177, 66, 1);
-    background-color: rgba(255, 177, 66, 1);
-	}
-	70% {
-    box-shadow: 0 0 0 15px rgba(255, 177, 66, 0);
-    background-color: rgba(255, 177, 66, 0);
-	}
-	100% {
-    box-shadow: 0 0 0 0 rgba(255, 177, 66, 0);
-    background-color: rgba(255, 177, 66, 0);
-	}
-}
+
+
 
 .chapter-image{
   height: 48px;
@@ -351,28 +319,28 @@ padding-bottom: 30px !important;
 
   .diag2{
     /* border-left: 411px solid #4a1b5f; */
-    border-left: 411px solid #662483;
+    border-left: 411px solid var(--vio);
     border-bottom: 50px solid transparent;
-    background-color: #2f90a9;
+    background-color: var(--cel);
   }
 
   .diag3{
-    border-left: 411px solid #662483;
+    border-left: 411px solid var(--vio);
     border-bottom: 50px solid transparent;
-    background-color: #a88f00;
+    background-color: var(--oro);
     margin-top: -16px;
   }
 
   .diag4{
-    border-left: 411px solid #a88f00;
+    border-left: 411px solid var(--oro);
     border-bottom: 50px solid transparent;
     background-color: rgb(46, 46, 46);
   }
 
   .diag5{
-    border-left: 411px solid #2f90a9;
+    border-left: 411px solid var(--cel);
     border-bottom: 50px solid transparent;
-    background-color: #662483;
+    background-color: var(--vio);
   }
 
 }
@@ -387,15 +355,15 @@ padding-bottom: 30px !important;
   }
   
   .diag2{
-    border-left: 375px solid #4a1b5f;
+    border-left: 375px solid var(--vio);
     border-bottom: 50px solid transparent;
-    background-color: #2f90a9;
+    background-color: var(--cel);
   }
   
   .diag3{
-    border-left: 375px solid #662483;
+    border-left: 375px solid var(--vio);
     border-bottom: 50px solid transparent;
-    background-color: #a88f00;
+    background-color: var(--oro);
     margin-top: -16px;
   }
   
@@ -406,9 +374,9 @@ padding-bottom: 30px !important;
   }
 
   .diag5{
-    border-left: 375px solid #2f90a9;
+    border-left: 375px solid var(--cel);
     border-bottom: 50px solid transparent;
-    background-color: #662483;
+    background-color: var(--vio);
   }
   
 }
@@ -421,15 +389,15 @@ padding-bottom: 30px !important;
   }
 
   .diag2{
-    border-left: 360px solid #4a1b5f;
+    border-left: 360px solid var(--vio);
     border-bottom: 50px solid transparent;
-    background-color: #2f90a9;
+    background-color: var(--cel);
   }
 
   .diag3{
-    border-left: 360px solid #662483;
+    border-left: 360px solid var(--vio);
     border-bottom: 50px solid transparent;
-    background-color: #a88f00;
+    background-color: var(--oro);
     margin-top: -16px;
   }
 
@@ -440,9 +408,9 @@ padding-bottom: 30px !important;
   }
 
   .diag5{
-    border-left: 360px solid#2f90a9;
+    border-left: 360px solidvar(--cel);
     border-bottom: 50px solid transparent;
-    background-color: #662483;
+    background-color: var(--vio);
   }
 
 }
@@ -464,14 +432,14 @@ padding-bottom: 30px !important;
 .rapid-link-elem{
   width: 48px;
   padding: 0px !important;
-  color: #2f90a9;
+  color: var(--cel);
   text-decoration: none
 }
 
 .teams{
   text-align: center;
-  background-image: linear-gradient(to bottom, #2f90a9 15%, rgb(46,46,46) 100%); 
-  /* background-image: linear-gradient(to bottom, #2f90a9 15%, #184955 100%);  */
+  background-image: linear-gradient(to bottom, var(--cel) 15%, rgb(46,46,46) 100%); 
+  /* background-image: linear-gradient(to bottom, var(--cel) 15%, #184955 100%);  */
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -504,7 +472,7 @@ html {
 	height:50px;
 	bottom:-50px;
 	right:10px;
-	background-color:#de69a6;
+	background-color:var(--ros);
   color:white;
   border-radius: 45px;
 	text-align:center;
@@ -530,27 +498,27 @@ html {
 .progress-container {
   width: 100%;
   height: 4px;
-  /* background: #2f90a9; */
+  /* background: var(--cel); */
   background: transparent;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 8px;
-  background: #de69a6 !important;
+  background: var(--ros) !important;
   width: 0%;
 }
 
 
 .install-butt{
-  background-color: #de69a6;
+  background-color: var(--ros);
   font-family: 'Title';
   font-weight:bold;
   font-style:normal;
   color: white;
   font-size: 25px;
   padding-bottom: 7px;
-  border-color: #de69a6;
+  border-color: var(--ros);
 }
 
 .container-settings{
