@@ -67,6 +67,9 @@
 .highlight-text{
   color : var(--cel);
 }
+.highlight-text-vio{
+  color : var(--vio);
+}
 
 .title_text{
     text-align: center;
