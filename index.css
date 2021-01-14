@@ -20,6 +20,8 @@
 
 .cup{
     background-color: var(--cel);
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    padding: 2rem 0;
 }
 
 .cup h1{
@@ -40,6 +42,8 @@
 .hof_color{
   /* border-top: 5px solid var(--ros); */
   background-color: var(--oro);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  padding-top: 2rem;
 }
 
 .color_white{
