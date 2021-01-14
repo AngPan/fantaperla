@@ -322,6 +322,7 @@ padding-bottom: 30px !important;
   .diag1{
       border-left: 411px solid rgb(46, 46, 46);
       border-bottom: 50px solid transparent;
+      width: 100%;
   }
 
   .diag2{
@@ -352,7 +353,7 @@ padding-bottom: 30px !important;
 
 }
 
-/* @media (max-width: 480px) { ... } */
+/* @media (max-width: 480px) { ... }
 
 @media (max-width: 375px) { 
 
@@ -420,7 +421,7 @@ padding-bottom: 30px !important;
     background-color: var(--vio);
   }
 
-}
+} */
 
 
 
