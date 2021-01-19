@@ -212,7 +212,7 @@ ul {
 }
 
 .scrollmenu_hall_of_fame {
-    background-color: #a88f00;
+    background-color: var(--oro);
     overflow: scroll;
     text-align: center;
     white-space: nowrap;
