@@ -305,7 +305,7 @@ padding-bottom: 30px !important;
   text-align: left;
 }
 
-.FGLink{
+/* .FGLink{
   background-color: rgb(46, 46, 46);
   text-align: center;
   font-family: 'Title';
@@ -314,7 +314,7 @@ padding-bottom: 30px !important;
   color: white;
   font-size: 25px;
   padding-top: 15px;
-}
+} */
 
 .rotateimg-30 {
   -webkit-transform:rotate(-30deg);
@@ -485,7 +485,13 @@ html {
 
 .leagueLink{
   padding-top: 2px !important;
-  width: 43px;
+  width: 45px;
+  margin-right: 5px !important;
+}
+
+.fgLink{
+  padding-top: 2px !important;
+  width: 38px;
   margin-right: 5px !important;
 }
 
