@@ -5,7 +5,7 @@
     }
 
     :root {
-      --vio: #662483;
+      --vio: #662483; 
       --ros: #de69a6;
       --cel: #2f90a9;
       --oro: #CB9C31;
@@ -48,6 +48,15 @@
 
 .color_white{
 	color: white;
+}
+.color-ros{
+	color: var(--ros);
+}
+.color-vio{
+	color: var(--vio);
+}
+.color-cel{
+	color: var(--cel);
 }
 
 .material-icons.md-36 { 
@@ -324,7 +333,8 @@ padding-bottom: 30px !important;
 @media (max-width: 767px) { 
   
   .diag1{
-      border-left: 411px solid rgb(46, 46, 46);
+      border-left: 411px solid var(--cel);
+      /* border-left: 411px solid rgb(46, 46, 46); */
       border-bottom: 50px solid transparent;
       width: 100%;
   }
@@ -450,8 +460,9 @@ padding-bottom: 30px !important;
 
 .teams{
   text-align: center;
-  background-image: linear-gradient(to bottom, var(--cel) 15%, rgb(46,46,46) 100%); 
+  /* background-image: linear-gradient(to bottom, var(--cel) 15%, rgb(46,46,46) 100%);  */
   /* background-image: linear-gradient(to bottom, var(--cel) 15%, #184955 100%);  */
+  background-color: var(--cel);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -474,7 +485,7 @@ html {
 
 .leagueLink{
   padding-top: 2px !important;
-  width: 45px;
+  width: 43px;
   margin-right: 5px !important;
 }
 
