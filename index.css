@@ -153,13 +153,7 @@ ul {
     list-style: none; /* Remove default bullets */
   }
   
-  ul li::before {
-    content: "\2726";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
+  
   
 
 .navbar-header{
@@ -560,8 +554,10 @@ html {
 
 
 
-/* INDEX2 */
-
+/*--------------------------------------------- INDEX2 ---------------------------------------------*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
 
 
 html,body {
@@ -571,9 +567,17 @@ html,body {
 }
 
 body {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content 1fr; */
+
+  display: grid;
+  grid-template-columns: minmax(min-content, 1024px);
+  justify-content: center;
   grid-template-rows: min-content min-content 1fr;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  
 }
 
 main {
@@ -585,6 +589,7 @@ main {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
+
 main > article {
 scroll-snap-align: start;
 scroll-snap-stop: always;
@@ -593,6 +598,8 @@ scroll-snap-stop: always;
 article{
   height: 100%;
   overflow-y: auto;
+  --padding-size: 1em;
+  padding: var(--padding-size);
 }
 
 .logo-img-2{
@@ -626,7 +633,12 @@ article{
 }
 
 .page-padding{
-  padding-top: 80px;
+  /* padding-top: 80px; */
+}
+
+.menu-padding{
+  padding-top: 68px;
+  height : 140px;
 }
 
 .bg-cel{
@@ -635,4 +647,47 @@ article{
 
 .bg-ner{
 background-color: var(--ner);
+}
+
+aside {
+  float: left;
+  width: 20em;
+  max-width: 100%;
+  background-color: var(--color4);
+  margin: .5em 1em .5em 0;
+  padding: .5em;
+  color: white;
+  border: 1px solid rgba(0,0,0,0.5); 
+  box-shadow: 0 0 10em -4em rgba(0,0,0,0.4) inset;50% 50% black inset;
+}
+
+
+nav {
+  display: flex;
+}
+
+nav > a {
+  display: inline-block;
+  flex-grow: 1;
+  text-align: center;
+/*   border: 1px solid darksalmon; */
+  border-width: 1px 1px 0 0;
+  padding: 1em;
+  color: black;
+
+}
+
+nav > a.focus {
+  background: var(--color3);
+  color: white;
+}
+
+li > a {
+  padding: 1em;
+  display: inline-block;
+  flex: 1;
+}
+
+.no-bullet{
+  list-style: none;
 }

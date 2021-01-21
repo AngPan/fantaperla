@@ -24,6 +24,22 @@ function replace(el, url) {
         });
 }
 
+/* Update the window URL on swipe, this is throttled so that the history doesn't get filled with useless entries*/
+function updateHistory(hash) {
+    clearTimeout(updateHistory.timeout);
+    updateHistory.timeout = setTimeout(function () {
+        if (window.location.hash !== hash) {
+            if (location.hash !== '') {
+                history.pushState({}, window.title, hash);
+            } else {
+
+                // On first page load update the URL in place
+                history.replaceState({}, window.title, hash);
+            }
+        }
+    }, 1000);
+}
+
 
 const iO = new IntersectionObserver(entries => entries.forEach(entry => {
     const hash = '#' + entry.target.id;
