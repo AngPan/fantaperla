@@ -707,7 +707,7 @@ li > a {
 
 .league-ball {
   display: inline-block;
-  width: 48px;
+  width: 46px;
   height: 46px;
   background-size: cover;
   background-image: url("img/logoball_cyan.svg");
