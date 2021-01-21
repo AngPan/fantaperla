@@ -12,6 +12,7 @@
       --ner : rgb(46, 46, 46);
     }
 
+    
 
 .bg_color {
     background-color: var(--vio);
@@ -97,7 +98,7 @@
 
 .title_text_hall{
   text-align: center;
-  padding-top: 50px;
+  padding-top: 25px;
   padding-bottom: 20px;
   font-family: 'Title';
   font-weight:bold;
@@ -149,12 +150,6 @@
     color: white;
 }
 
-ul {
-    list-style: none; /* Remove default bullets */
-  }
-  
-  
-  
 
 .navbar-header{
     width:100%;
@@ -178,12 +173,13 @@ ul {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-right: 0px !important;
+    border-radius: 20px;
 }
 
 .footer-credits{
-    padding-right: 5px;
-    text-align: right;
-    float: right;
+    /* padding-right: 5px; */
+    text-align: center;
+    /* float: right; */
 }
 
 .footer-image{
@@ -256,7 +252,19 @@ ul {
   }
   
 
+  ul {
+    list-style: none; /* Remove default bullets */
+  }
   
+  ul.star {
+    list-style-type: "\2726";
+    content: "\2726";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    /* width: 1em; /* Also needed for space (tweak if needed) */
+    /* margin-left: -1em; Also needed for space (tweak if needed) */ 
+  }
+
 
 
 
@@ -637,7 +645,7 @@ article{
 }
 
 .menu-padding{
-  padding-top: 68px;
+  padding-top: 85px;
   height : 140px;
 }
 
@@ -649,6 +657,10 @@ article{
 background-color: var(--ner);
 }
 
+.bg-oro{
+  background-color: var(--oro);
+}
+
 aside {
   float: left;
   width: 20em;
@@ -658,7 +670,7 @@ aside {
   padding: .5em;
   color: white;
   border: 1px solid rgba(0,0,0,0.5); 
-  box-shadow: 0 0 10em -4em rgba(0,0,0,0.4) inset;50% 50% black inset;
+  box-shadow: 0 0 10em -4em rgba(0,0,0,0.4) inset;
 }
 
 
@@ -677,10 +689,11 @@ nav > a {
 
 }
 
-nav > a.focus {
-  background: var(--color3);
-  color: white;
+div > a.focus >i {
+  color: var(--ros);
+  fill: var(--ros)
 }
+
 
 li > a {
   padding: 1em;
@@ -690,4 +703,30 @@ li > a {
 
 .no-bullet{
   list-style: none;
+}
+
+.league-ball {
+  display: inline-block;
+  width: 48px;
+  height: 46px;
+  background-size: cover;
+  background-image: url("img/logoball_cyan.svg");
+  filter: invert(49%) sepia(26%) saturate(1091%) hue-rotate(145deg) brightness(94%) contrast(87%);
+}
+
+
+div > a.focus >span {
+  filter: invert(60%) sepia(29%) saturate(2592%) hue-rotate(294deg) brightness(96%) contrast(80%);
+}
+
+.copyright-settings{
+  border-bottom-style: ridge;
+  border-bottom-color: var(--vio);
+}
+
+.copyright-logo{
+  background-color: var(--vio);
+  border-radius: 30px;
+  height: fit-content;
+  color: white;
 }

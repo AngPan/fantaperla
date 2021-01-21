@@ -132,35 +132,28 @@
 
 
     <nav class="menu-padding">
-        <div class="w-100">
-            <ul class="d-flex row no-bullet w-100">
-                <li class="d-inline col"><a href="#article1"><img class="column rapid-link-elem leagueLink"
-                            src="img/logoball_cyan.png" alt=""></a></li>
-                <li class="d-inline col"><a href="#article2"><i
-                            class="material-icons md-48 column rapid-link-elem">emoji_events</i></a></li>
-                <li class="d-inline col pr-0"><a href="#article3"><i
-                            class="material-icons md-48 column rapid-link-elem">shopping_cart</i></a></li>
-            </ul>
+        <div class="container w-100">
+            <div class="d-flex row no-bullet w-100 m-0">
+                <div class="d-inline col-3 text-center"><a href="#article1">
+                        <!-- <svg>
+                            <path class="column rapid-link-elem leagueLink" src="img/logoball_cyan.svg" alt="" />
+                            <path class="column rapid-link-elem leagueLink icon icon-bike" alt="" />
+                        </svg> -->
+                        <span class="column rapid-link-elem leagueLink league-ball" alt="">
+                        </span>
+                    </a></div>
+                <div class="d-inline col-3 text-center"><a href="#article2"><i
+                            class="material-icons md-48 column rapid-link-elem">emoji_events</i></a></div>
+                <div class="d-inline col-3 text-center"><a href="#article3"><i
+                            class="material-icons md-48 column rapid-link-elem">shopping_cart</i></a></div>
+                <div class="d-inline col-3 text-center"><a href="#article4"><i
+                            class="material-icons md-48 column rapid-link-elem">history_edu</i></a></div>
+            </div>
         </div>
     </nav>
 
 
     <main class="mb-0 pb-0">
-
-
-
-
-        <!-- <article id="article2" class="page-padding bg-cel">
-            <script>replace(document.currentScript, 'regCoppa.html')</script>
-        </article> -->
-
-
-
-
-
-
-
-
 
         <article id="article1" class="page-padding bg_color">
             <script>replace(document.currentScript, 'regCampionato.html')</script>
@@ -366,6 +359,50 @@
         </article> -->
 
 
+        <article id="article4" class="page-padding bg_color">
+            <script>replace(document.currentScript, 'alboDoro.html')</script>
+        </article>
+
+        <!-- <article id="article4" class="page-padding bg-oro">
+            <div class="">
+                <h1 class="title_text_hall">ALBO D'ORO</h1>
+                <div class="container scrollmenu_hall_of_fame">
+                    <div class="hof_row">
+                        <div class="hof_col">
+                            <img src="img/pannik.png" />
+                            <h3 class="year_text_hall"><b>2019-20</b></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer-settings row m-0">
+                <i class="material-icons md-48 column copyright-logo">copyright</i>
+                <div class="footer-credits col">
+                    <h3 class="title-font">
+                        <img class="footer-image" src='img/me.png' onmouseover="this.src='img/mefill.png';"
+                            onmouseout="this.src='img/me.png';" />
+                        Angelo Panniello <br>
+                        <h5 class="credits_text">2020</h5>
+                    </h3>
+                </div>
+            </footer>
+        </article> -->
 
     </main>
+
+
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            console.log("Will the service worker register?");
+            navigator.serviceWorker.register('sw.js')
+                .then(function (reg) {
+                    console.log("Yes, it did.");
+                }).catch(function (err) {
+                    console.log("No it didn't. This happened:", err)
+                });
+        }
+    </script>
+
+
 </body>
