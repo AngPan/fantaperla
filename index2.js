@@ -24,6 +24,23 @@ function replace(el, url) {
         });
 }
 
+
+const iO = new IntersectionObserver(entries => entries.forEach(entry => {
+    const hash = '#' + entry.target.id;
+    const navEl = $`[href="${hash}"]`;
+    if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+        navEl.classList.add('focus');
+        updateHistory(hash);
+    } else {
+        navEl.classList.remove('focus');
+    }
+}), {
+    root: $`main`,
+    threshold: 0.5
+});
+
+
+
 window.addEventListener('DOMContentLoaded', () => $$`article`.map(a => iO.observe(a)));
 window.addEventListener('hashchange', function (e) {
     const articleToShow = $(window.location.hash || '#' + $`article`.id);
