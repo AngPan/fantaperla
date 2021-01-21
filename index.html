@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport"
@@ -15,9 +14,9 @@
     <link rel="icon" type="image/png" href="img/logoball_white.png" />
     <title>Lega FantaPerla</title>
 
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index2.js"></script>
     <script type="text/javascript" src="scroll.js"></script>
-    <script type="text/javascript" src="timeout.js"></script>
+    <!-- <script type="text/javascript" src="timeout.js"></script> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -36,15 +35,31 @@
     <meta name="msapplication-TileImage" content="/logoball_color.png">
     <meta name="theme-color" content="#ffffff">
 </head>
-
 <header id="top">
 
-    <div id="navbar">
-        <img class="logo_img" src="img/logoball_color.png">
-        <img class="logo_txt" src="img/logotext.png">
+    <div id="navbar-2" class="container">
+        <div class="d-flex w-100 justify-content-end">
+
+            <div class="col-2 justify-content-between logo-bar-2">
+                <img class="logo-img-2 d-inline " src="img/logoball_color.png">
+            </div>
+            <div class="col-10 align-self-center">
+                <!-- <img class="logo_txt" src="img/logotext.png"> -->
+                <img class="team-img-2 d-inline" src="img/arr.png" />
+                <img class="team-img-2 d-inline" src="img/ast.png" />
+                <img class="team-img-2 d-inline" src="img/lev.png" />
+                <img class="team-img-2 d-inline" src="img/dinamo.png" />
+                <img class="team-img-2 d-inline" src="img/fcp.png" />
+                <img class="team-img-2 d-inline" src="img/lag.png" />
+                <img class="team-img-2 d-inline" src="img/pannik.png" />
+                <img class="team-img-2 d-inline" src="img/psg.png" />
+                <img class="team-img-2 d-inline" src="img/pisa.png" />
+                <img class="team-img-2 d-inline" src="img/rubk.png" />
+            </div>
+        </div>
     </div>
 
-    <div class="diag0"></div>
+    <!-- <div class="diag0"></div> -->
 
     <a href="#top" class="btnFloat" id="topBtn">
         <i class="fa fa-plus material-icons md-48 color_white">
@@ -67,7 +82,7 @@
         <img class='lastteam' src="img/rubk.png" />
         </a>
     </div> -->
-
+    <!-- 
     <div class="teams">
         <img src="img/arr.png" />
         <img src="img/ast.png" />
@@ -79,56 +94,24 @@
         <img src="img/psg.png" />
         <img src="img/pisa.png" />
         <img src="img/rubk.png" />
-    </div>
+    </div> -->
 
 
 </header>
 
-<body class="bg_color">
+<body class="bg-ner">
+    <!-- <div class="diag1 "></div> -->
 
-
-    <!-- </script> -->
-    <!-- <a href="https://leghe.fantacalcio.it/luisellafantaperla" style="text-decoration: none" target="_blank">
-        <div class="FGLink">
-            VEDI CLASSIFICA E ROSE SU <img src="img/leghefanta.png">
-            <i class="material-icons md-36 rotateimg-30">touch_app</i>
-        </div>
-    </a> -->
-    <div class="diag1 "></div>
-
-
-    <div class="link-container">
+    <!-- <div class="link-container">
         <div class="rapid-links row">
             <a href="#league"><img class="column rapid-link-elem leagueLink" src="img/logoball_cyan.png" alt=""></a>
             <a href="#cup"><i class="material-icons md-48 column rapid-link-elem">emoji_events</i></a>
-            <a href="#market"><i class="material-icons md-48 column rapid-link-elem">shopping_cart</i></a>
-            <!-- <i class="material-icons md-48 column rapid-link-elem" class="btn btn-primary" data-toggle="modal"
+            <a href="#market"><i class="material-icons md-48 column rapid-link-elem">shopping_cart</i></a> -->
+    <!-- <i class="material-icons md-48 column rapid-link-elem" class="btn btn-primary" data-toggle="modal"
                 data-target="#listoneModal">contact_page</i> -->
-            <!-- <i class="material-icons md-48 column rapid-link-elem" type="button" class="btn" onclick="mapsSelector()">location_on</i> -->
-        </div>
+    <!-- <i class="material-icons md-48 column rapid-link-elem" type="button" class="btn" onclick="mapsSelector()">location_on</i> -->
+    <!-- </div>
     </div>
-
-    <!-- <div class="modal fade" id="listoneModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Scaricare listone giocatori?</h4>
-                </div>
-                <div class="modal-footer">
-                    <a href="docs/Quotazioni_Fantacalcio-INV20.xlsx" class="highlight-text" download class="button"
-                        id="dwnld"><i class="material-icons md-48">get_app</i></a>
-
-                    <button type="button" class="btn " data-dismiss="modal" style="color: #662483"><i
-                            class="material-icons md-48">clear</i>
-                    </button>
-                </div>
-
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <div id="timer" class="timer"></div> -->
-
 
     <div class="container w-100 link-container">
         <div class="row w-100 mx-0 d-flex justify-content-end ">
@@ -137,15 +120,31 @@
                         src="img/fg-icon.png" alt=""></a>
             </div>
             <div class="install-trigger color-ros d-flex" id="install_button" onclick="addToHomeScreen()">
-                <i class="material-icons md-48 d-inline install-trigger">android</i>
-                <!-- <h4 class="my-auto d-inline install-trigger font-weight-bold">INSTALLA APP</h4>
+                <i class="material-icons md-48 d-inline install-trigger">android</i> -->
+    <!-- <h4 class="my-auto d-inline install-trigger font-weight-bold">INSTALLA APP</h4>
                 <i class="material-icons md-36 d-inline install-trigger">get_app</i> -->
-            </div>
+    <!-- </div>
         </div>
-    </div>
+    </div> -->
 
-    <div>
-        <div class="bg_color">
+
+
+
+
+
+    <!-- <header>
+        <h1>The Pink Paper</h1>
+        <h2>It's Salmon Actually</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#article1">Article 1</a></li>
+            <li><a href="#article2">Article 2</a></li>
+            <li><a href="#article3">Article 3</a></li>
+        </ul>
+    </nav> -->
+    <main>
+        <article id="article1" class="page-padding bg_color">
             <h1 class="title_text" id="league">
                 REGOLAMENTO CAMPIONATO
             </h1>
@@ -245,134 +244,72 @@
                 </h2>
 
             </div>
+        </article>
 
 
 
-            <div class="cup">
-                <h1 class="title_text" id="cup">
-                    REGOLAMENTO POZZESINHO CUP
+        <article id="article2" class="page-padding bg-cel">
+            <script>replace(document.currentScript, 'regCoppa.html')</script>
+        </article>
+
+
+
+        <article id="article3" class="page-padding bg_color">
+            <div class="chapter-text">
+                <h1 class="title_text" id="market">
+                    REGOLAMENTO<br>MERCATI
                 </h1>
-
-                <div class="chapter-text">
-                    <h2 class="mb-0">
-                        <i class="material-icons md-36">emoji_events</i><b>REGOLE GENERALI</b>
-                        <ul class="star mb-0">
-                            <li class="simple_text">
-                                Montepremi : <b style="color: goldenrod;">50€</b>
-                            </li>
-                            <li class="simple_text">
-                                Partecipano <b class="highlight-text-vio">tutte le squadre partecipanti al
-                                    campionato</b>.
-                            </li>
-                            <li class="simple_text pb-2">
-                                <b class="highlight-text-vio">Calendario giornate:</b> :<br>
-                                Gironi: 5-7-9-11-13-15-17-19-21-23<br>
-                                Quarti: 25-26<br>
-                                Semifinali: 28-29<br>
-                                Finale: 32<br>
-                            </li>
-                        </ul>
-                    </h2>
-                </div>
+                <h2>
+                    <b><i class="material-icons md-36">gavel</i> ASTA INIZIALE</b>
+                    <ul>
+                        <li class="simple_text">
+                            L'asta iniziale si terrà <b class="highlight-text">dopo la chiusura del mercato estivo</b>.
+                            Data: <b class="highlight-text">09/10/20</b>.
+                        </li>
+                        <li class="simple_text">
+                            L'asta per ogni giocatore parte da <b class="highlight-text">1c</b>.
+                        </li>
+                        <li class="simple_text mb-5">
+                            <b class="highlight-text">Ogni partecipante chiama a turno</b> il giocatore per il quale si
+                            terrà l'asta.
+                        </li>
+                    </ul>
+                </h2>
             </div>
-        </div>
 
-        <div class="chapter-text">
-            <h1 class="title_text" id="market">
-                REGOLAMENTO<br>MERCATI
-            </h1>
-            <h2>
-                <b><i class="material-icons md-36">gavel</i> ASTA INIZIALE</b>
-                <ul>
-                    <li class="simple_text">
-                        L'asta iniziale si terrà <b class="highlight-text">dopo la chiusura del mercato estivo</b>.
-                        Data: <b class="highlight-text">09/10/20</b>.
-                    </li>
-                    <li class="simple_text">
-                        L'asta per ogni giocatore parte da <b class="highlight-text">1c</b>.
-                    </li>
-                    <li class="simple_text mb-5">
-                        <b class="highlight-text">Ogni partecipante chiama a turno</b> il giocatore per il quale si
-                        terrà l'asta.
-                    </li>
-                </ul>
-            </h2>
-        </div>
-
-        <div class="chapter-text">
-            <h2>
-                <b><i class="material-icons md-36">healing</i> ASTA DI RIPARAZIONE</b>
-                <ul>
-                    <li class="simple_text">
-                        L'asta di riparazione si terrà <b class="highlight-text">dopo la fine del mercato
-                            invernale</b>.
-                    </li>
-                    <li class="simple_text">
-                        L'asta di riparazione è in <b class="highlight-text">tre fasi</b> : nella prima le squadre
-                        svincolano i giocatori che non desiderano più avere in rosa. Una volta conclusasi questa
-                        fase si sceglie il giocatore da inserire nel vivaio, e infine si procede con l'asta.
-                    </li>
-                    <li class="simple_text">
-                        Svincolando un giocatore si recuperano tanti crediti quanti <b class="highlight-text">il
-                            minore tra valore d'acquisto e valore attuale del giocatore svincolato</b>.
-                    </li>
-                    <li class="simple_text">
-                        Se un giocatore <b class="highlight-text">viene venduto ufficialmente all'estero</b> vale la
-                        regola di sopra.
-                    </li>
-                    <li class="simple_text">
-                        Un giocatore svincolato <b class="highlight-text">non può essere riacquistato dalla squadra che
-                            lo svincola</b>.
-                    </li>
-                    <li class="simple_text mb-5">
-                        Possono essere svincolati/comprati solo giocatori che <b
-                            class="highlight-text">ufficialmente</b> sono in serie A.
-                    </li>
-                </ul>
-            </h2>
-        </div>
-
-        <div class="hof_color">
-            <h1 class="title_text_hall"><i class="material-icons md-36 color_white">history_edu</i> ALBO D'ORO</h1>
-            <div class="container scrollmenu_hall_of_fame">
-                <div class="hof_row">
-                    <div class="hof_col">
-                        <img src="img/pannik.png" />
-                        <h3 class="year_text_hall"><b>2019-20</b></h3>
-                    </div>
-                </div>
+            <div class="chapter-text">
+                <h2>
+                    <b><i class="material-icons md-36">healing</i> ASTA DI RIPARAZIONE</b>
+                    <ul>
+                        <li class="simple_text">
+                            L'asta di riparazione si terrà <b class="highlight-text">dopo la fine del mercato
+                                invernale</b>.
+                        </li>
+                        <li class="simple_text">
+                            L'asta di riparazione è in <b class="highlight-text">tre fasi</b> : nella prima le squadre
+                            svincolano i giocatori che non desiderano più avere in rosa. Una volta conclusasi questa
+                            fase si sceglie il giocatore da inserire nel vivaio, e infine si procede con l'asta.
+                        </li>
+                        <li class="simple_text">
+                            Svincolando un giocatore si recuperano tanti crediti quanti <b class="highlight-text">il
+                                minore tra valore d'acquisto e valore attuale del giocatore svincolato</b>.
+                        </li>
+                        <li class="simple_text">
+                            Se un giocatore <b class="highlight-text">viene venduto ufficialmente all'estero</b> vale la
+                            regola di sopra.
+                        </li>
+                        <li class="simple_text">
+                            Un giocatore svincolato <b class="highlight-text">non può essere riacquistato dalla squadra
+                                che
+                                lo svincola</b>.
+                        </li>
+                        <li class="simple_text mb-5">
+                            Possono essere svincolati/comprati solo giocatori che <b
+                                class="highlight-text">ufficialmente</b> sono in serie A.
+                        </li>
+                    </ul>
+                </h2>
             </div>
-        </div>
-
-
-
-        <script type="text/javascript">
-            if ('serviceWorker' in navigator) {
-                console.log("Will the service worker register?");
-                navigator.serviceWorker.register('sw.js')
-                    .then(function (reg) {
-                        console.log("Yes, it did.");
-                    }).catch(function (err) {
-                        console.log("No it didn't. This happened:", err)
-                    });
-            }
-        </script>
-
-
+        </article>
+    </main>
 </body>
-<div class="diag4 "></div>
-<footer class="footer-settings row">
-
-    <div class="footer-credits col">
-        <h3 class="title-font">
-            <img class="footer-image" src='img/me.png' onmouseover="this.src='img/mefill.png';"
-                onmouseout="this.src='img/me.png';" />
-            Angelo Panniello <br>
-            <h5 class="credits_text">2020</h5>
-        </h3>
-
-    </div>
-
-</footer>
-
-</html>
