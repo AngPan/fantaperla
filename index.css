@@ -627,6 +627,7 @@ article{
 
 .page-padding{
   padding-top: 80px;
+  height: fit-content;
 }
 
 .bg-cel{
