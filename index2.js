@@ -23,3 +23,10 @@ function replace(el, url) {
             el.remove();
         });
 }
+
+window.addEventListener('DOMContentLoaded', () => $$`article`.map(a => iO.observe(a)));
+window.addEventListener('hashchange', function (e) {
+    const articleToShow = $(window.location.hash || '#' + $`article`.id);
+    articleToShow.scrollIntoView();
+    e.preventDefault();
+}, false);
