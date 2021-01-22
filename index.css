@@ -678,7 +678,7 @@ padding-top: 45px;
 }
 
 .bg-teams-lev-r{
-  background-image: linear-gradient(to right, var(--ner) 5%, rgb(0, 78, 0)0%); 
+  background-image: linear-gradient(to right, var(--ner) 5%, rgb(0, 78, 0) 40%); 
 }
 
 .bg-teams-din-l{
@@ -706,7 +706,7 @@ padding-top: 45px;
 }
 
 .bg-teams-rbk-l{
-  background-image: linear-gradient(to left, var(--ner) 5%, rgb(3, 80, 0)0%); 
+  background-image: linear-gradient(to left, var(--ner) 5%, rgb(3, 80, 0) 40%); 
 }
 
 /* ---------------- */
