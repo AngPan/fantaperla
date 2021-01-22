@@ -169,8 +169,7 @@
     }      
 
 .footer-settings{
-    background-color: rgb(46, 46, 46);
-    padding-top: 5px;
+  padding-top: 5px;
     padding-bottom: 5px;
     margin-right: 0px !important;
     border-radius: 20px;
@@ -662,13 +661,7 @@ article{
   font-weight:bold;
   font-style:normal;
   color: white;
-  font-size: 17px;
-}
-
-.team-name-pres{
-  font-family: 'Title';
-  font-style:normal;
-  color: white;
+  font-size: 25px;
 }
 
 #navbar-2 {
@@ -785,6 +778,13 @@ div > svg > a.focus >path {
   color: white;
 }
 
+.copyright-text{
+  color: white;
+  font-weight: bold;
+  font-family: 'Title';
+  font-size: 20px;
+}
+
 .shirt-logo{
   width:48px;
   height:48px;
@@ -795,7 +795,7 @@ div > svg > a.focus >path {
 }
 
 .footer-logo{
-padding-top: 20px;
+padding-top: 35px;
 }
 
 
