@@ -666,6 +666,13 @@ div > svg > a.focus >path {
 padding-top: 45px;
 }
 
+::selection {
+  background: var(--ros);;
+}
+::-moz-selection {
+  background: var(--ros);;
+}
+
 
 /* TEAMS BG */
 
