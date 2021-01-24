@@ -20,6 +20,7 @@
 
 }
 
+
 .cup{
     background-color: var(--cel);
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
@@ -553,6 +554,10 @@ article{
 .menu-padding{
   padding-top: 85px;
   height : 140px;
+}
+
+.bg-vio {
+  background-color: var(--vio);
 }
 
 .bg-cel{
