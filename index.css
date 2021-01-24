@@ -677,43 +677,43 @@ padding-top: 45px;
 /* TEAMS BG */
 
 .bg-teams-arr-r{
-  background-image: linear-gradient(to right, var(--ner) 5%, rgb(100, 0, 100) 40%); 
+  background-image: linear-gradient(to right, var(--cel) 5%, rgb(100, 0, 100) 40%); 
 }
 
 .bg-teams-ast-l{
-  background-image: linear-gradient(to left, var(--ner) 5%, rgb(124, 101, 0) 40%); 
+  background-image: linear-gradient(to left, var(--cel) 5%, rgb(124, 101, 0) 40%); 
 }
 
 .bg-teams-lev-r{
-  background-image: linear-gradient(to right, var(--ner) 5%, rgb(0, 78, 0) 40%); 
+  background-image: linear-gradient(to right, var(--cel) 5%, rgb(0, 78, 0) 40%); 
 }
 
 .bg-teams-din-l{
-  background-image: linear-gradient(to left, var(--ner) 5%, rgb(124, 60, 0) 40%); 
+  background-image: linear-gradient(to left, var(--cel) 5%, rgb(124, 60, 0) 40%); 
 }
 
 .bg-teams-fcp-r{
-  background-image: linear-gradient(to right, var(--ner) 5%, rgb(109, 16, 0)40%); 
+  background-image: linear-gradient(to right, var(--cel) 5%, rgb(109, 16, 0)40%); 
 }
 
 .bg-teams-lag-l{
-  background-image: linear-gradient(to left, var(--ner) 5%, rgb(93, 84, 0) 40%); 
+  background-image: linear-gradient(to left, var(--cel) 5%, rgb(93, 84, 0) 40%); 
 }
 
 .bg-teams-pannik-r{
-  background-image: linear-gradient(to right, var(--ner) 5%, rgb(27, 0, 100) 40%); 
+  background-image: linear-gradient(to right, var(--cel) 5%, rgb(27, 0, 100) 40%); 
 }
 
 .bg-teams-psg-l{
-  background-image: linear-gradient(to left, var(--ner) 5%, rgb(124, 25, 0) 40%); 
+  background-image: linear-gradient(to left, var(--cel) 5%, rgb(124, 25, 0) 40%); 
 }
 
 .bg-teams-psa-r{
-  background-image: linear-gradient(to right, var(--ner) 5%, rgb(19, 0, 88)40%); 
+  background-image: linear-gradient(to right, var(--cel) 5%, rgb(19, 0, 88)40%); 
 }
 
 .bg-teams-rbk-l{
-  background-image: linear-gradient(to left, var(--ner) 5%, rgb(3, 80, 0) 40%); 
+  background-image: linear-gradient(to left, var(--cel) 5%, rgb(3, 80, 0) 40%); 
 }
 
 /* ---------------- */
