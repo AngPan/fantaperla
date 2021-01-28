@@ -628,6 +628,14 @@ li > a {
   filter: invert(49%) sepia(26%) saturate(1091%) hue-rotate(145deg) brightness(94%) contrast(87%);
 }
 
+.teams-shirt {
+  display: inline-block;
+  width: 48px;
+  height: 46px;
+  background-size: cover;
+  background-image: url("img/teams-shirt.png");
+  filter: invert(49%) sepia(26%) saturate(1091%) hue-rotate(145deg) brightness(94%) contrast(87%);
+}
 
 div > a.focus >span {
   filter: invert(60%) sepia(29%) saturate(2592%) hue-rotate(294deg) brightness(96%) contrast(80%);
