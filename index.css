@@ -603,10 +603,17 @@ nav > a {
 
 }
 
+div > a.albo.focus >i {
+  color: var(--oro);
+  fill: var(--oro)
+}
+
 div > a.focus >i {
   color: var(--ros);
   fill: var(--ros)
 }
+
+
 
 
 li > a {
@@ -639,11 +646,6 @@ li > a {
 
 div > a.focus >span {
   filter: invert(60%) sepia(29%) saturate(2592%) hue-rotate(294deg) brightness(96%) contrast(80%);
-}
-
-div > svg > a.focus >path {
-  filter: invert(60%) sepia(29%) saturate(2592%) hue-rotate(294deg) brightness(96%) contrast(80%);
-  fill: var(--ros);
 }
 
 .copyright-settings{
