@@ -644,6 +644,26 @@ li > a {
   filter: invert(49%) sepia(26%) saturate(1091%) hue-rotate(145deg) brightness(94%) contrast(87%);
 }
 
+.whatsapp-logo {
+  display: inline-block;
+  width: 48px;
+  height: 46px;
+  background-size: cover;
+  background-image: url("img/whatsapp.png");
+  /* filter: invert(64%) sepia(77%) saturate(400%) hue-rotate(89deg) brightness(86%) contrast(109%); */
+  filter: invert(0%) sepia(9%) saturate(0%) hue-rotate(283deg) brightness(109%) contrast(101%);
+}
+
+.discord-logo {
+  display: inline-block;
+  width: 48px;
+  height: 46px;
+  background-size: cover;
+  background-image: url("img/discord.png");
+  /* filter: invert(64%) sepia(77%) saturate(400%) hue-rotate(89deg) brightness(86%) contrast(109%); */
+  filter: invert(0%) sepia(9%) saturate(0%) hue-rotate(283deg) brightness(109%) contrast(101%);
+}
+
 div > a.focus >span {
   filter: invert(60%) sepia(29%) saturate(2592%) hue-rotate(294deg) brightness(96%) contrast(80%);
 }
