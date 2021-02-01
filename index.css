@@ -651,7 +651,6 @@ li > a {
   background-size: cover;
   background-image: url("img/whatsapp.png");
   /* filter: invert(64%) sepia(77%) saturate(400%) hue-rotate(89deg) brightness(86%) contrast(109%); */
-  filter: invert(0%) sepia(9%) saturate(0%) hue-rotate(283deg) brightness(109%) contrast(101%);
 }
 
 .discord-logo {
@@ -661,7 +660,6 @@ li > a {
   background-size: cover;
   background-image: url("img/discord.png");
   /* filter: invert(64%) sepia(77%) saturate(400%) hue-rotate(89deg) brightness(86%) contrast(109%); */
-  filter: invert(0%) sepia(9%) saturate(0%) hue-rotate(283deg) brightness(109%) contrast(101%);
 }
 
 div > a.focus >span {
