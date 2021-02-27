@@ -709,6 +709,17 @@ padding-top: 45px;
   background: var(--ros);;
 }
 
+.doblete{
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  color: white;
+  border: white;
+  border-style: solid;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
 
 /* TEAMS BG */
 
