@@ -177,8 +177,7 @@
   padding-top: 5px;
     padding-bottom: 5px;
     margin-right: 0px !important;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;;
     margin-top: 6rem !important;
 }
 
