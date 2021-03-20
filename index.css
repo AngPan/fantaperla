@@ -9,6 +9,7 @@
       --ros: #de69a6;
       --cel: #2f90a9;
       --oro: #CB9C31;
+      --dark-oro: #755b1e;
       --ner : rgb(46, 46, 46);
     }
 
@@ -727,6 +728,29 @@ padding-top: 45px;
   font-weight: 100;
 text-align: center
 ;}
+
+.history-league-cont{
+  background-color: var(--dark-oro);
+  height: fit-content;
+  margin: .5rem 0 0 0;
+  border-radius: .6rem;
+}
+
+.history-league-col{
+  text-align: center;
+  padding: 0;
+  margin: auto;
+}
+
+.history-league-div{
+  padding: .4rem;
+}
+
+.history-league-img-team{
+  height: 2rem;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
 
 /* TEAMS BG */
 
