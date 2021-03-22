@@ -755,6 +755,14 @@ text-align: center
   margin-right: .1rem;
 }
 
+.history-league-silver{
+  background-color: silver;
+  border-radius: 10px 10px 0 0;
+  background-image: linear-gradient(to bottom, silver 74%, transparent 100%); 
+
+}
+
+
 /* TEAMS BG */
 
 .bg-teams-arr-r{
