@@ -62,6 +62,9 @@
 .color-cel{
 	color: var(--cel);
 }
+.color-oro{
+  color: var(--oro);
+}
 
 .material-icons.md-18 { 
   font-size: 18px; 
