@@ -51,19 +51,19 @@
 }
 
 .color_white{
-	color: white;
+	color: white !important;
 }
 .color-ros{
-	color: var(--ros);
+	color: var(--ros !important);
 }
 .color-vio{
-	color: var(--vio);
+	color: var(--vio) !important;
 }
 .color-cel{
-	color: var(--cel);
+	color: var(--cel) !important;
 }
 .color-oro{
-  color: var(--oro);
+  color: var(--oro) !important;
 }
 
 .material-icons.md-18 { 
@@ -133,6 +133,10 @@
     color: var(--ros);
 }
 
+.mt-60px{
+  margin-top: 60px !important;
+}
+
 .simple_text{
     text-align: left;
     margin-top: 30px;
@@ -182,7 +186,7 @@
     padding-bottom: 5px;
     margin-right: 0px !important;
     border-radius: 20px;;
-    margin-top: 9rem !important;
+    margin-top: 5rem !important;
 }
 
 .footer-credits{
@@ -762,6 +766,9 @@ text-align: center
 
 }
 
+.mt-6{
+  margin-top: 6rem;
+}
 
 /* TEAMS BG */
 
