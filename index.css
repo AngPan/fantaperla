@@ -727,6 +727,7 @@ padding-top: 45px;
   border-style: solid;
   border-radius: 20px;
   font-size: 25px;
+  background-color: var(--vio);
 }
 
 .star-info-text{
