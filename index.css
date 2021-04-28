@@ -18,14 +18,14 @@
     
 
 .bg_color {
-    background-color: var(--bg-vio);
+    background-color: var(--vio);
     /* background-image: linear-gradient(to bottom, var(--vio) 15%, #461959 100%);  */
 
 }
 
 
 .cup{
-    background-color: var(--bg-cel);
+    background-color: var(--cel);
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
     padding: 4rem 0;
 }
@@ -571,11 +571,11 @@ article{
 }
 
 .bg-vio {
-  background-color: var(--vio);
+  background-color: var(--bg-vio);
 }
 
 .bg-cel{
-  background-color: var(--cel);
+  background-color: var(--bg-cel);
 }
 
 .bg-ner{
