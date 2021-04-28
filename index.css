@@ -5,10 +5,12 @@
     }
 
     :root {
-      --vio: #662483; 
+      --vio: #662483;
+      --bg-vio: #6e268c;
       --ros: #de69a6;
       --cel: #2f90a9;
-      --oro: #CB9C31;
+      --bg-cel: #27778b;
+      --oro: #906f23;
       --dark-oro: #755b1e;
       --ner : rgb(46, 46, 46);
     }
@@ -16,14 +18,14 @@
     
 
 .bg_color {
-    background-color: var(--vio);
+    background-color: var(--bg-vio);
     /* background-image: linear-gradient(to bottom, var(--vio) 15%, #461959 100%);  */
 
 }
 
 
 .cup{
-    background-color: var(--cel);
+    background-color: var(--bg-cel);
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
     padding: 4rem 0;
 }
@@ -551,7 +553,7 @@ article{
 
 #navbar-2 {
   overflow: hidden;
-  background-color: var(--cel);
+  background-color: var(--bg-cel);
   padding: 15px; /* Large padding which will shrink on scroll (using JS) */
   transition: 0.4s; /* Adds a transition effect when the padding is decreased */
   width: 100%;
