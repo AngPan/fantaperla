@@ -56,7 +56,7 @@
 	color: white !important;
 }
 .color-ros{
-	color: var(--ros !important);
+	color: var(--ros) !important;
 }
 .color-vio{
 	color: var(--vio) !important;
