@@ -1,117 +1,114 @@
 <!doctype html>
+
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="icon" type="image/png" href="img/logoball_white.png" />
-    <title>Lega FantaPerla</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
 
     <link rel="stylesheet" href="index.css">
-
-    <script type="text/javascript" src="index2.js"></script>
-    <script type="text/javascript" src="scroll.js"></script>
-    <!-- <script type="text/javascript" src="timeout.js"></script> -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
 
     <!-- WEBAPP -->
     <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/logoball_color.png">
+    <meta name="msapplication-TileImage" content="/logo/ball_colored.png">
     <meta name="theme-color" content="#ffffff">
+
+    <title>Lega FantaPerla</title>
+
 </head>
-<header id="top">
-
-    <div id="navbar-2" class="container ">
-        <div class="row">
-            <div class="col px-0 w-100 text-center">
-                <img class="logo-txt-2 d-inline pr-1" src="img/logo-txt-fanta.png">
-                <img class="logo-img-2 d-inline pr-1" src="img/logoball_color.png">
-                <img class="logo-txt-2 d-inline pr-1" src="img/logo-txt-perla.png">
-            </div>
-        </div>
-    </div>
-
-</header>
-
-<body class="bg-ner">
-
-    <nav class="menu-padding">
-        <div class="container w-100">
-            <div class="d-flex row no-bullet w-100 m-0">
-
-                <div class="d-inline col text-center px-0"><a href="#campionato">
-                        <span class="column rapid-link-elem league-ball" alt="">
-                        </span>
-                    </a></div>
-                <div class="d-inline col text-center px-0"><a href="#coppa"><i
-                            class="material-icons md-48 column rapid-link-elem">emoji_events</i></a></div>
-                <div class="d-inline col text-center px-0"><a href="#mercato"><i
-                            class="material-icons md-48 column rapid-link-elem">shopping_cart</i></a></div>
-                <div class="d-inline col text-center px-0"><a href="#teams">
-                        <span class="column rapid-link-elem shirt-logo teams-shirt" alt="">
-                        </span>
-                    </a></div>
-                <div class="d-inline col text-center px-0"><a href="#albo" class="albo"><i
-                            class="material-icons md-48 column rapid-link-elem ">history_edu</i></a></div>
-            </div>
+<header>
+    <nav class="navbar title-bar float-center p-0">
+        <div class="container title-container p-0">
+            <row>
+                <img class="title-text" src="img/logo/text-fanta-colored.png" alt="">
+                <img class="title-logo" src="img/logo/ball-colored.png" alt="">
+                <img class="title-text" src="img/logo/text-perla-colored.png" alt="">
+            </row>
         </div>
     </nav>
+</header>
 
+<body class="bg-vio">
 
     <main class="mb-0 pb-0">
-
         <article id="campionato" class="bg-vio">
-            <script>replace(document.currentScript, 'pages/regCampionato.html')</script>
+            <script>
+                replace(document.currentScript, 'pages/campionato.html')
+            </script>
         </article>
-
         <article id="coppa" class=" bg-cel">
-            <script>replace(document.currentScript, 'pages/regCoppa.html')</script>
+            <script>
+                replace(document.currentScript, 'pages/coppa.html')
+            </script>
         </article>
-
-        <article id="mercato" class="bg-vio">
-            <script>replace(document.currentScript, 'pages/regMercato.html')</script>
+        <article id="mercati" class="bg-vio">
+            <script>
+                replace(document.currentScript, 'pages/mercati.html')
+            </script>
         </article>
-
-        <article id="teams" class=" bg-cel">
-            <script>replace(document.currentScript, 'pages/teams.html')</script>
+        <article id="squadre" class=" bg-cel">
+            <script>
+                replace(document.currentScript, 'pages/squadre.html')
+            </script>
         </article>
-
-        <article id="albo" class="page-padding bg-oro">
-            <script>replace(document.currentScript, 'pages/alboDoro.html')</script>
+        <article id="hall" class="bg-oro">
+            <script>
+                replace(document.currentScript, 'pages/hall.html')
+            </script>
         </article>
-
     </main>
 
+
+    <footer class="footer footer-bar mt-auto py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col p-0 navbar-item">
+                    <a href="#campionato" id="menu-campionato">
+                        <span class="column footer-capitolo-logo footer-campionato-logo" alt=""></span></a>
+                </div>
+                <div class="col p-0 navbar-item">
+                    <a href="#coppa">
+                        <i class="material-icons md-48 column footer-capitolo-logo">emoji_events</i>
+                    </a>
+                </div>
+                <div class="col p-0 navbar-item">
+                    <a href="#mercati">
+                        <i class="material-icons md-48 column footer-capitolo-logo">shopping_cart</i>
+                    </a>
+                </div>
+                <div class="col p-0 navbar-item">
+                    <a href="#squadre" id="menu-shirt">
+                        <span class="footer-capitolo-logo footer-squadre-logo" alt=""></span></a>
+                    </a>
+                </div>
+                <div class="col p-0 navbar-item">
+                    <a href="#hall" class="hall">
+                        <i class="material-icons md-48 column footer-hall-logo">history_edu</i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript">
         if ('serviceWorker' in navigator) {
             console.log("Will the service worker register?");
             navigator.serviceWorker.register('sw.js')
-                .then(function (reg) {
+                .then(function(reg) {
                     console.log("Yes, it did.");
-                }).catch(function (err) {
+                }).catch(function(err) {
                     console.log("No it didn't. This happened:", err)
                 });
         }
     </script>
-
-
 </body>
+
+
+</html>
