@@ -242,7 +242,7 @@ article {
 .doblete {
     position: absolute;
     top: 0px;
-    right: 50px;
+    right: 10vw;
     color: white;
     border: white;
     border-style: solid;
