@@ -26,6 +26,10 @@
     background-color: var(--oro);
 }
 
+.bg-ner {
+    background-color: var(--ner);
+}
+
 .color-cel {
     color: var(--cel);
 }
@@ -184,6 +188,12 @@ article {
 .page-rule-link {
     text-decoration: none;
     color: var(--cel);
+}
+
+.install-app-banner {
+    background-color: var(--ner);
+    height: 2rem;
+    z-index: 999;
 }
 
 
