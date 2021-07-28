@@ -190,12 +190,6 @@ article {
     color: var(--cel);
 }
 
-.install-app-banner {
-    background-color: var(--ner);
-    height: 2rem;
-    z-index: 999;
-}
-
 
 /* -- */
 
