@@ -170,8 +170,7 @@ article {
     height: 3rem;
 }
 
-.spazio-sottotitolo-infobox {
-    @extend .spazio-sottotitolo;
+.spazio-sottotitolo.infobox {
     border-bottom: var(--oro) 1px solid;
 }
 
