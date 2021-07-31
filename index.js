@@ -74,41 +74,36 @@ async function registerSW() {
     }
 }
 
-window.addEventListener('beforeinstallprompt', function(event) {
-    // not show the default browser install app prompt
-    event.preventDefault();
-    // add the banner here or make it visible
-    // …
-    // console.log("App non installata");
-    // $('#install_button').css('display', 'flex');
+export const pwaTrackingListeners = () => {
+    const fireAddToHomeScreenImpression = event => {
+        fireTracking("Add to homescreen shown");
+        //will not work for chrome, untill fixed
+        event.userChoice.then(choiceResult => {
+            fireTracking(`User clicked ${choiceResult}`);
+        });
+        //This is to prevent `beforeinstallprompt` event that triggers again on `Add` or `Cancel` click
+        window.removeEventListener(
+            "beforeinstallprompt",
+            fireAddToHomeScreenImpression
+        );
+    };
+    window.addEventListener("beforeinstallprompt", fireAddToHomeScreenImpression);
 
-    // save the event to use it later
-    // (it has the important prompt method and userChoice property)
-    window.promptEvent = event;
-});
-
-
-document.addEventListener('click', function(event) {
-    if (event.target.matches('.install-trigger')) {
-        addToHomeScreen();
-    }
-});
-
-function addToHomeScreen() {
-    // show the install app prompt
-    window.promptEvent.prompt();
-
-    // handle the Decline/Accept choice of the user
-    window.promptEvent.userChoice.then(function(choiceResult) {
-        // hide the prompt banner here
-        // …
-
-        if (choiceResult.outcome === 'accepted') {
-            console.info('mm User accepted the A2HS prompt');
-        } else {
-            console.info('mm User dismissed the A2HS prompt');
-        }
-
-        window.promptEvent = null;
+    //Track web app install by user
+    window.addEventListener("appinstalled", event => {
+        fireTracking("PWA app installed by user!!! Hurray");
     });
-}
+
+    //Track from where your web app has been opened/browsed
+    window.addEventListener("load", () => {
+        let trackText;
+        if (navigator && navigator.standalone) {
+            trackText = "Launched: Installed (iOS)";
+        } else if (matchMedia("(display-mode: standalone)").matches) {
+            trackText = "Launched: Installed";
+        } else {
+            trackText = "Launched: Browser Tab";
+        }
+        fireTracking(track);
+    });
+};
