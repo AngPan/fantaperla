@@ -11,7 +11,11 @@ export const pwaTrackingListeners = () => {
             fireAddToHomeScreenImpression
         );
     };
-    window.addEventListener("beforeinstallprompt", fireAddToHomeScreenImpression);
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+        deferredPrompt = e;
+        fireAddToHomeScreenImpression();
+    });
 
     //Track web app install by user
     window.addEventListener("appinstalled", event => {
@@ -31,3 +35,17 @@ export const pwaTrackingListeners = () => {
         fireTracking(track);
     });
 };
+
+const installApp = document.getElementById('installApp');
+
+installApp.addEventListener('click', async() => {
+    if (deferredPrompt !== null) {
+        deferredPrompt.prompt();
+        const {
+            outcome
+        } = await deferredPrompt.userChoice;
+        if (outcome === 'accepted') {
+            deferredPrompt = null;
+        }
+    }
+});
