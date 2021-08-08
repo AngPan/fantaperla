@@ -251,12 +251,12 @@ article {
     position: absolute;
     top: 0px;
     right: 10vw;
-    color: white;
+    color: var(--oro);
     border: white;
     border-style: solid;
     border-radius: 20px;
     font-size: 25px;
-    background-color: var(--oro);
+    background-color: white;
 }
 
 
