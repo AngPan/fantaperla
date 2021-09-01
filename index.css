@@ -201,6 +201,14 @@ article {
     color: var(--cel);
 }
 
+.tab {
+    padding-left: 1rem;
+}
+
+.tab-2 {
+    padding-left: 2rem;
+}
+
 
 /* -- */
 
