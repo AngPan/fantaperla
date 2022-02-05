@@ -5,7 +5,7 @@
 
 :root {
     --vio: #662483;
-    --bg-vio: #6e268c;
+    --bg-vio: #401752;
     --ros: #de69a6;
     --cel: #2f90a9;
     --bg-cel: #27778b;
@@ -150,6 +150,16 @@ article {
 }
 
 .page-title {
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    font-family: "fp-font";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.page-title-ros {
+    color: var(--ros);
     justify-content: center;
     font-size: 2rem;
     color: white;
@@ -334,7 +344,7 @@ article {
 
 .footer-campionato-logo {
     display: inline-block;
-    width: 48px;
+    width: 46px;
     height: 46px;
     background-size: cover;
     background-image: url("img/logo/ball-cyan.svg");
