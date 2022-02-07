@@ -41,17 +41,19 @@
     display: none;
 }
 
-html,
 body {
     width: 100%;
     height: 100%;
     margin: 0;
     overflow: hidden;
-    scroll-behavior: smooth;
 }
 
 html {
     scroll-snap-type: y mandatory;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -114,6 +116,7 @@ article {
     bottom: 0;
     width: 100%;
     height: 4rem;
+    z-index: 999;
 }
 
 .navbar-item {
@@ -139,11 +142,33 @@ article {
     padding: 0px 1rem;
 }
 
+.button {
+    height: 3rem;
+    width: 3rem;
+}
+
+.top-links {
+    justify-content: right;
+}
+
+.scroll-margin {
+    scroll-margin-top: 5rem;
+}
+
+
+/* TOP */
+
+.top-capitolo-logo {
+    padding: 0px !important;
+    color: var(--cel);
+    text-decoration: none
+}
+
 
 /* PAGINE */
 
 .page-settings {
-    padding-top: 5rem;
+    padding-top: 4rem;
     padding-bottom: 4rem;
     padding-left: 0;
     padding-right: 0;
