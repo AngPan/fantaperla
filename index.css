@@ -94,7 +94,7 @@ article {
     width: 100vw;
     position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: 999;
     height: 5rem;
 }
 
@@ -264,7 +264,8 @@ article {
 }
 
 .img-squadra {
-    height: 6rem;
+    height: 5rem;
+    margin-top: 0.5rem;
 }
 
 .img-squadra.hall {
@@ -276,10 +277,13 @@ article {
     color: white;
     font-size: 1rem;
     align-self: center;
-    font-weight: 400;
+    font-weight: 500;
     justify-content: center;
     text-align: center;
     margin-top: 0.2rem;
+    background-color: var(--vio);
+    align-content: center;
+    min-height: 3rem;
 }
 
 .testo-squadra.hall {
@@ -287,11 +291,13 @@ article {
 }
 
 .card-squadra {
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: var(--ner);
-    margin: 0.2rem;
-    border: 0.2rem solid var(--oro);
+    padding: 0rem;
+    background-color: var(--cel);
+    margin: 0.5rem;
+    max-width: 9rem;
+    min-width: 8rem;
+    max-height: 8rem;
+    min-height: 8rem;
 }
 
 
