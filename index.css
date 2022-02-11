@@ -258,8 +258,7 @@ article {
 /* SQUADRE */
 
 .row-squadre {
-    align-content: center;
-    align-items: center;
+    justify-content: center;
 }
 
 .col-squadra {
