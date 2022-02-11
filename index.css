@@ -257,6 +257,11 @@ article {
 
 /* SQUADRE */
 
+.row-squadre {
+    align-content: center;
+    align-items: center;
+}
+
 .col-squadra {
     max-width: 7rem;
     margin: 0 !important;
