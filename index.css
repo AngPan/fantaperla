@@ -290,10 +290,6 @@ article {
     min-height: 3rem;
 }
 
-.testo-squadra.hall {
-    font-weight: 500 !important;
-}
-
 .card-squadra {
     padding: 0rem;
     background-color: var(--cel);
@@ -328,6 +324,11 @@ article {
     border-radius: 20px;
     font-size: 25px;
     background-color: white;
+}
+
+.testo-squadra.hall {
+    font-weight: 500 !important;
+    background-color: unset;
 }
 
 
