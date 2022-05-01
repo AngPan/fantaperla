@@ -317,7 +317,7 @@ article {
 .doblete {
     position: absolute;
     top: 0px;
-    right: 10vw;
+    right: 4vw;
     color: var(--oro);
     border: white;
     border-style: solid;
