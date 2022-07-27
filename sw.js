@@ -19,10 +19,10 @@ export const pwaTrackingListeners = () => {
             fireTracking(`User clicked ${choiceResult}`);
         });
         //This is to prevent `beforeinstallprompt` event that triggers again on `Add` or `Cancel` click
-        window.removeEventListener(
+       /* window.removeEventListener(
             "beforeinstallprompt",
             fireAddToHomeScreenImpression
-        );
+        );*/
     };
     window.addEventListener("beforeinstallprompt", fireAddToHomeScreenImpression);
 
