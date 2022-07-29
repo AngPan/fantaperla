@@ -89,7 +89,7 @@ article {
 }
 
 .title-bar {
-    background-color: var(--cel);
+    background-color: var(--vio);
     border-bottom: var(--oro) 0.2rem solid;
     width: 100vw;
     position: fixed;
