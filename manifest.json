@@ -7,13 +7,13 @@
     "description": "L'app ufficiale del FantaPerla",
     "theme_color": "#2f90a9",
     "icons": [{
-            "src": "./img/logo/ball_colored.png",
+            "src": "./img/logo/ball-colored.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "./img/logo/ball_colored.png",
+            "src": "./img/logo/ball-colored.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
