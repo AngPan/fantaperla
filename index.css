@@ -7,6 +7,7 @@
     --vio: #662483;
     --bg-vio: #401752;
     --ros: #de69a6;
+    --bg-ros: #6e3352;
     --cel: #2f90a9;
     --bg-cel: #1b505d;
     --oro: #a47f28;
@@ -28,6 +29,10 @@
 
 .bg-ner {
     background-color: var(--ner);
+}
+
+.bg-ros {
+    background-color: var(--bg-ros);
 }
 
 .color-cel {
