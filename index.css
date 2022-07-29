@@ -293,6 +293,9 @@ article {
     background-color: var(--vio);
     align-content: center;
     min-height: 3rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 1rem;
 }
 
 .card-squadra {
@@ -303,6 +306,7 @@ article {
     min-width: 8rem;
     max-height: 8rem;
     min-height: 8rem;
+    border-radius: 1rem;
 }
 
 
