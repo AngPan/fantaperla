@@ -79,6 +79,7 @@ main {
     grid-auto-columns: 100%;
     scroll-behavior: smooth !important;
     overflow-x: scroll;
+    overflow-y: scroll;
     scroll-snap-type: x mandatory;
 }
 
