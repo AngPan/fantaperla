@@ -94,6 +94,10 @@ article {
     padding: var(--padding-size);
 }
 
+.container {
+    scroll-behavior: smooth;
+}
+
 .title-bar {
     background-color: var(--vio);
     border-bottom: var(--oro) 0.2rem solid;
@@ -199,6 +203,7 @@ article {
     padding-bottom: 4rem;
     padding-left: 0;
     padding-right: 0;
+    scroll-behavior: smooth;
 }
 
 .page-title {
