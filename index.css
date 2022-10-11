@@ -247,6 +247,8 @@ article {
 
 .spazio-sottotitolo.infobox {
     border-bottom: var(--oro) 1px solid;
+    margin-bottom: 2rem;
+    height: 1rem !important;
 }
 
 .star-bullet {
