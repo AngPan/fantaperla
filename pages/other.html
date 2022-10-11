@@ -83,7 +83,7 @@
         <div id="paypal-button-container"></div>
       </div>
     </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=AVm1Oc_jPZL9ys39tLNxnLeoCWC9oVutoKBtIWB-8PK5p4AsschDRRMXs3l1z6Pz4yJ9qSxMojFHN7_0&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
   <script>
     function initPayPalButton() {
       paypal.Buttons({
@@ -97,7 +97,7 @@
 
         createOrder: function(data, actions) {
           return actions.order.create({
-            purchase_units: [{"description":"Quota iscrizione","amount":{"currency_code":"EUR","value":1}}]
+            purchase_units: [{"description":"Iscrizione Fanta Perla","amount":{"currency_code":"EUR","value":50}}]
           });
         },
 
@@ -124,7 +124,6 @@
     }
     initPayPalButton();
   </script>
-    
     
     
     
