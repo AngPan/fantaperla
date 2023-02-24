@@ -458,3 +458,44 @@ div>a.hall.focus>i {
 
 
 /* -- */
+
+
+/* ACCORDION */
+
+.accordion-button.collapsed {
+    color: white;
+    background: var(--vio);
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+    outline: none;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+    outline: none;
+}
+
+.fp-acc-item {
+    color: white;
+    font-family: 'fp-font';
+}
+
+.fp-acc-button {
+    background-color: var(--cel);
+    width: 95%;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    box-shadow: none;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.fp-acc-header {
+    color: white;
+    font-size: 1.3rem;
+    font-family: "fp-font";
+    font-style: normal;
+    font-weight: normal;
+}
