@@ -440,6 +440,16 @@ article {
     filter: invert(30%) sepia(45%) saturate(679%) hue-rotate(277deg) brightness(89%) contrast(88%);
 }
 
+.footer-rules-logo {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    background-size: cover;
+    background-image: url("img/varie/rules.svg");
+    text-decoration: none;
+    filter: invert(30%) sepia(45%) saturate(679%) hue-rotate(277deg) brightness(89%) contrast(88%);
+}
+
 div>a.focus>i {
     color: var(--ros);
 }
