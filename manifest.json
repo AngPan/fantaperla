@@ -3,9 +3,9 @@
     "short_name": "FantaPerla",
     "start_url": "index.html",
     "display": "standalone",
-    "background_color": "#2f90a9",
+    "background_color": "#401752",
     "description": "L'app ufficiale del FantaPerla",
-    "theme_color": "#2f90a9",
+    "theme_color": "#401752",
     "icons": [{
             "src": "./img/logo/ball-colored.png",
             "sizes": "512x512",
